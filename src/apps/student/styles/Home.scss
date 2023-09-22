@@ -1,0 +1,91 @@
+.studentHome {
+  :global {
+    .app-tab-container {
+      margin: 36px 0 24px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .student-hours-actions {
+      width: 100%;
+      display: flex;
+    }
+
+    .app-cta-buttons {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 2rem;
+      height: 36px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+
+      @media (max-width: 576px) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .cta-button-mobile {
+      border: 1px solid #293a68;
+      width: 164px;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: transparent;
+      transition: transform 0.15s linear;
+      margin-right: 5%;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+      }
+    }
+
+    .cta-button-primary {
+      background-color: #293a68;
+      margin: 0;
+      color: white;
+    }
+
+    .student-tasks-sessions-container {
+      padding: 40px;
+
+      @media (max-width: 576px) {
+        padding: 16px;
+
+        .page-title {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 375px) {
+        padding: 14px;
+
+        .page-title {
+          font-size: 16px;
+          letter-spacing: 0.5px;
+          margin-bottom: 5px;
+        }
+      }
+
+      &.completed {
+        margin-top: 40px;
+
+        @media (max-width: 375px) {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+.completedTasksHeader {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}

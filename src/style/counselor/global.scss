@@ -1,0 +1,23 @@
+:global {
+  .counselor-header-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 20px;
+    font-family: 'Rokkitt', serif;
+    font-size: 28px;
+
+    @media (max-width: 1280px) {
+      font-size: 22px;
+    }
+
+    a {
+      height: 30px;
+      padding: 0px 12px;
+    }
+    a.active,
+    a:hover {
+      border-bottom: solid 3px #04acec;
+    }
+  }
+}

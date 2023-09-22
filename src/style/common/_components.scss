@@ -1,0 +1,307 @@
+
+.app-tab-container {
+  line-height: 1.75;
+
+  a,
+  .ant-btn {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 30px;
+    padding: 4px 10px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+    border-bottom: solid 3px transparent;
+    border: none !important;
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+      margin-right: 8px;
+      padding: 4px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 14px;
+      margin-right: 8px;
+      padding: 4px 1px;
+    }
+
+    &.active,
+    &:hover {
+      border-bottom: solid 3px #04acec !important;
+      color: #04acec;
+    }
+  }
+}
+
+.right-buttons-container {
+  text-align: right;
+
+  .ant-btn {
+    margin-left: 24px;
+  }
+}
+
+.help,
+.tiny {
+  font-size: 12px;
+}
+
+.vertical-form-container {
+  $form-spacing: 14px;
+
+  .formGroup,
+  .form-group {
+    margin-top: $form-spacing;
+  }
+
+  .ant-select {
+    width: 100%;
+  }
+
+  .datepicker {
+    input {
+      margin-left: $form-spacing;
+    }
+  }
+
+  hr {
+    margin: $form-spacing 0px;
+    border: solid 1px #04acec;
+  }
+  .tab-container {
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+    padding: 24px 0px 12px;
+    margin-top: 24px;
+    .tab-item {
+      flex: 1;
+      text-align: center;
+      background: none;
+      border: none;
+      padding: 5px 0;
+      margin: 0 30px;
+      border-bottom: 3px solid transparent;
+      transition: 0.3s ease-in-out all;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 16px;
+      color: #293a68;
+      outline: none;
+      &:hover {
+        color: #04acec;
+        border-bottom: 3px solid #04acec;
+        cursor: pointer;
+      }
+    }
+    .active {
+      color: #04acec;
+      border-bottom: 3px solid #04acec;
+    }
+  }
+}
+
+.app-white-container {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+
+  @media (max-width: 576px) {
+    padding: 1rem;
+  }
+  &.responsive {
+    max-width: 90vw;
+    width: 1400px;
+  }
+}
+
+a.action-button,
+button.action-button {
+  display: block;
+  border-radius: 8px;
+  border: solid 1px #293a68;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+  padding: 20px 12px;
+  margin-bottom: 10px;
+  transition: transform 0.15s linear;
+  background: none;
+  cursor: pointer;
+  min-width: 100%;
+
+  @media (max-width: 768px-lg) {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding: 12px 6px;
+  }
+
+  &.primary {
+    background: #293a68;
+    color: white;
+  }
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  &.white {
+    border-color: white;
+    color: white;
+
+    &.primary {
+      background: white;
+      color: #293a68;
+    }
+  }
+}
+
+// React Big Calendar - global css
+.rbc-calendar,
+.rbc-header,
+.rbc-overlay-header,
+.rbc-overlay > .rbc-event {
+  font-size: 14px;
+}
+
+.rbc-overlay-header {
+  font-weight: 600;
+}
+
+.rbc-overlay > .rbc-event > .rbc-event-content {
+  font-size: 0.9em;
+}
+
+.rbc-event-task {
+  background-color: #06cfc3;
+}
+
+.rbc-event-individual {
+  background-color: #293a68;
+}
+
+.rbc-event-group {
+  background-color: #04acec;
+}
+
+.rbc-event-task-past,
+.rbc-event-individual-past,
+.rbc-event-group-past {
+  background-color: #808080;
+}
+
+.rbc-event.rbc-selected {
+  background-color: #ff6e1a !important;
+}
+
+.rbc-event:focus {
+  outline: none;
+}
+
+// Edit User Form
+.form-3-col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  & > div,
+  .ant-form-item {
+    flex: 0 0 30%;
+  }
+
+  .right-buttons-container {
+    flex: 0 0 100%;
+  }
+}
+
+.form-2-col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  & > div,
+  .ant-form-item {
+    flex: 0 0 48%;
+  }
+
+  .right-buttons-container {
+    flex: 0 0 100%;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ant-card.elevated {
+  box-shadow: 3px 3px 4px 0px rgba(130, 128, 130, 0.5);
+}
+
+.wisernet-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px * 2 0px;
+  font-size: 14px;
+  .wisernet-toolbar-group {
+    display: flex;
+    align-items: center;
+    &.vertical {
+      flex-direction: column;
+    }
+  }
+  .wisernet-toolbar-title {
+    flex: 1 1 30%;
+    h2,
+    h3 {
+      margin: 0;
+    }
+  }
+  .wisernet-toolbar-group,
+  .ant-btn {
+    margin-left: 20px * 2;
+    label {
+      margin-right: 20px/2;
+    }
+  }
+  .ant-select,
+  .ant-input,
+  .ant-input-search {
+    width: 200px;
+  }
+}
+.ant-btn.passive-link {
+  color: #c4c4c4;
+  &:hover {
+    color: #293a68;
+  }
+}
+
+.ant-table {
+  .ant-table-cell.center {
+    text-align: center !important;
+  }
+  .ant-table-cell.right {
+    text-align: right !important;
+  }
+}
+// Item in drop down where multiple items can be selected (using <Menu> component)
+.wisernet-ddown-item {
+  .spacer {
+    padding-left: 20px;
+  }
+}
+
+.ant-modal-title {
+  font-family: 'Rokkitt', serif;
+  font-size: 20px;
+}
+
+// So that messages don't cover menu
+.ant-message {
+  margin-top: 8vh;
+}
