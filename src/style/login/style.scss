@@ -1,2 +1,26 @@
 @import '../common/global';
 
+.login-container {
+    width: 500px;
+    margin: auto;
+    margin-top: 130px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 24px 0px, rgba(0, 0, 0, 0.05) 0px 20px 48px 0px, rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        img {
+            width: 50px;
+        }
+
+        h2 {
+            margin: 0 20px;
+        }
+    }
+
+    .ant-form-item-label {
+        width: 125px;
+    }
+}

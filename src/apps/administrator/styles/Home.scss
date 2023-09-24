@@ -1,0 +1,28 @@
+@import 'style/administrator/variables';
+
+.homeContainer {
+  :global {
+    .ant-table-tbody .ant-table-row {
+      a {
+        color: #04acec;
+
+        &:hover {
+          color: darken(#04acec, 30%);
+        }
+      }
+    }
+  }
+}
+
+.tableWrapper {
+  margin: 0px 40px 40px 0px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}

@@ -46,7 +46,7 @@ function App() {
           <PublicRoute path="/user/platform/student" component={Student}/>
           <PublicRoute path="/user/platform/parent" component={Parent}/>
           <PublicRoute path="/login" component={LoginApp}/>
-          <PublicRoute path="/user/platform/admin" component={Admin}/>
+          <PublicRoute path="/user/platform/administrator" component={Admin}/>
           <PublicRoute path="/user/platform/tutor" component={Tutor}/>
           <PublicRoute path="/user/platform/landing" component={Landing}/>
           <PublicRoute path="/user/platform/counseling" component={CounselorApp}/>
