@@ -1,0 +1,24 @@
+.counselorApp {
+  :global {
+    // For counselor platform
+    .loading-container {
+      display: flex;
+      justify-content: center;
+      padding-top: calc(25vh);
+      height: calc(100vh - 63px);
+      font-size: 4rem;
+      width: 100%;
+    }
+    .counselor-flexbox {
+      display: flex;
+      .counselor-right-content {
+        flex: 1 1 80%;
+        height: calc(100vh - 108px);
+        overflow-y: auto;
+      }
+    }
+    .main-menu {
+      padding-top: 10px;
+    }
+  }
+}
