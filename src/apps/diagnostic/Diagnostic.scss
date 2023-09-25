@@ -1,0 +1,197 @@
+
+.diagnosticPageContainer {
+  max-width: 1100px;
+  width: 98%;
+  margin: 40px auto;
+  padding: 30px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 768px) {
+    padding: 15px 20px;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+    margin: 0;
+    padding: 10px 10px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  :global {
+    // Makes the required asterix larger
+    .ant-form-item-label > label.ant-form-item-required::before {
+      font-size: 22px;
+    }
+    .survey-header-container,
+    .success-page-header {
+      padding: 0px 0px 10px;
+      margin-bottom: 20px;
+      h2 {
+        font-size: 36px;
+        letter-spacing: 2px;
+        @media (max-width: 768px-lg) {
+          font-size: 32px;
+          letter-spacing: 1.5px;
+        }
+        @media (max-width: 768px) {
+          font-size: 28px;
+          letter-spacing: 1.2px;
+        }
+        @media (max-width: 576px) {
+          font-size: 24px;
+          padding: 10px;
+          letter-spacing: 0.8px;
+        }
+        @media (max-width: 576px) {
+          font-size: 18px;
+        }
+      }
+    }
+    .success-confirmation {
+      margin-bottom: 40px;
+    }
+
+    .survey-instructions {
+      font-size: 15px;
+      padding: 0 10px;
+      letter-spacing: 0.8px;
+      @media (max-width: 768px-lg) {
+        font-size: 14px;
+        letter-spacing: 0.6px;
+      }
+      @media (max-width: 768px) {
+        font-size: 13px;
+      }
+      @media (max-width: 576px) {
+        font-size: 12px;
+      }
+      .email-scores {
+        color: #04acec;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .steps-block {
+      margin-bottom: 30px;
+      @media (max-width: 480px) {
+        margin-bottom: 10px;
+      }
+    }
+    .step-title {
+      font-size: 18px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+      @media (max-width: 576px) {
+        font-size: 12px;
+      }
+    }
+
+    .form-label {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.9px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+    .academic-form-items {
+      label {
+        display: inline-block;
+      }
+      .ant-form-item-label {
+        margin-bottom: 15px;
+      }
+      .ant-form-item {
+        padding: 0 10px;
+        margin-bottom: 40px !important;
+      }
+      .form-label {
+        display: inline-block;
+        font-weight: normal;
+        letter-spacing: 0.8px;
+      }
+    }
+
+    .register-form-items {
+      .form-label {
+        font-weight: normal;
+        letter-spacing: 0.8px;
+      }
+    }
+
+    .counselor-dropdown {
+      width: 220;
+    }
+
+    .disability-radio-group,
+    .registration-type-radio-group,
+    .sat-diagnostic-radio-group,
+    .act-diagnostic-radio-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .disability-radio,
+    .registration-type-radio,
+    .sat-diagnostic-radio,
+    .act-diagnostic-radio {
+      display: block;
+      height: 40px;
+      line-height: 30px;
+      width: 400px;
+    }
+    .steps-action {
+      margin: 20px 0 10px;
+    }
+    .hidden {
+      display: none;
+    }
+    .diagnostic-card {
+      border: 1px solid lightgrey;
+      margin-bottom: 50px;
+      .card-title {
+        font-weight: bold;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+      }
+      .card-row {
+        margin-bottom: 2px;
+      }
+      .card-row:last-of-type {
+        margin-bottom: 0px;
+      }
+      .card-row-label {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        width: 110px;
+        letter-spacing: 0.7px;
+      }
+      .card-row-value {
+        font-size: 16px;
+      }
+    }
+    .submission-error-wrapper {
+      .error-message {
+        text-align: center;
+        font-size: 16px;
+        color: red;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+      .error-button-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+.selfAssignDiagnostic {
+  :global {
+  }
+}
