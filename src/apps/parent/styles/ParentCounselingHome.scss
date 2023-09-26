@@ -1,0 +1,28 @@
+.parentCounselingHome {
+  display: flex;
+  justify-content: space-between;
+  :global {
+    .container-left,
+    .container-right {
+      flex: 0 0 45%;
+      max-width: 630px;
+    }
+    .wisernet-section {
+      margin-bottom: 4 * 20px;
+    }
+    .wisernet-calendar-container .wisernet-section-content {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .messages {
+      .ant-btn {
+        background: #04acec;
+        border-width: 0px;
+        margin-left: 20px;
+        color: white;
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+}

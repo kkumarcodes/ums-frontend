@@ -1,0 +1,34 @@
+.parentCounselorMeetingNotes {
+  :global {
+    .counselor-note {
+      display: flex;
+      margin-bottom: 20px;
+      padding: 20px 0px;
+      padding-right: 20px;
+      &:hover {
+        background: #293a68;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .bullet {
+      flex: 0 0 38px;
+      .bullet-inner {
+        height: 16px;
+        width: 16px;
+        border-radius: 100%;
+        background: #04acec;
+        margin: auto;
+        margin-top: 3px;
+      }
+    }
+    .read-more-container {
+      padding-left: 38px;
+      .ant-btn {
+        background: #04acec;
+        border-color: #04acec;
+        color: white;
+      }
+    }
+  }
+}
