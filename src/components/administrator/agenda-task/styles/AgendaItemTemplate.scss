@@ -1,0 +1,21 @@
+.cmtHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.counselorInstructions {
+  color: rgba(0, 0, 0, 0.85);
+  padding-bottom: 20px;
+
+  :global {
+    .instruction-text-box {
+      margin-bottom: 3*20px;
+    }
+  }
+}
+
+textarea.ant-input {
+  margin-bottom: 3*20px;
+}
