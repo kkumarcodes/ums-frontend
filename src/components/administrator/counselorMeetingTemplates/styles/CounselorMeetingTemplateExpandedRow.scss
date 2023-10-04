@@ -1,0 +1,162 @@
+.agendaHeader {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.taskHeader {
+  font-size: 20px;
+  text-decoration: underline;
+  margin: 7px 0px 28px 0px;
+}
+
+.checkboxCol {
+  display: flex;
+  align-items: center;
+
+  :global {
+    .checkbox-form-item {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.agendaItemTab {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  color: #293a68 !important;
+
+  .agendaItemTab :hover {
+    color: #293a68 !important;
+  }
+
+  :global {
+    .add-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 5px;
+      padding-bottom: 10px;
+    }
+
+    .add-icon:hover {
+      color: #04acec !important;
+    }
+  }
+}
+
+.existingAgendaTab {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  color: rgba(0, 0, 0, 0.65) !important;
+
+  .existingAgendaTab:hover {
+    color: rgba(0, 0, 0, 0.65) !important;
+  }
+
+  :global {
+    .edit-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 5px;
+      color: rgba(0, 0, 0, 0.65) !important;
+    }
+
+    .edit-icon:hover {
+      color: #04acec !important;
+    }
+
+    .agenda-title-link:hover {
+      color: #04acec !important;
+    }
+  }
+}
+
+.agendaDataContainer {
+  display: flex !important;
+  flex-direction: row;
+  padding-left: 15px;
+
+  :global {
+    .task-item-column {
+      padding-left: 10px;
+    }
+
+    .column-title-headers {
+      font-size: 18px;
+    }
+
+    .before-and-after {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+
+    .task-unordered-list-container {
+      display: flex;
+      flex-direction: row;
+      padding-left: 25px;
+    }
+
+    .list-items-tasks {
+      margin-right: 10px;
+    }
+
+    .no-task-text {
+      padding-left: 25px;
+    }
+
+    .icon-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .edit-tasks-icon {
+      padding-left: 15px;
+    }
+
+
+    #edit-task svg {
+      width: 0.95em;
+      height: 0.95em;
+    }
+
+    #edit-task-dis svg {
+      width: 0.95em;
+      height: 0.95em;
+    }
+
+
+    .remove-tasks-icon {
+      padding-left: 15px;
+      padding-bottom: 2.5px;
+    }
+
+    .counselor-instruction-text {
+      margin-left: 20px;
+      margin-right: 40px;
+    }
+    .slim-btn-edit {
+      width: fit-content;
+      height: fit-content;
+      margin: 5px, 0px, 5px, 0px;
+    }
+
+    button.slim-btn-edit {
+      color: rgba(0, 0, 0, 0.55);
+    }
+
+    button.slim-btn-edit:hover {
+      color: #04acec !important;
+    }
+
+    .add-task-button {
+      margin-left: 45%;
+      margin-right: 45%;
+    }
+  }
+}
