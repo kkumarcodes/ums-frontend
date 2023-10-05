@@ -1,0 +1,10 @@
+.courseFilter {
+  margin-right: auto;
+  :global {
+    .search {
+      .ant-btn.ant-input-search-button {
+        margin-left: 0;
+      }
+    }
+  }
+}

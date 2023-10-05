@@ -1,0 +1,79 @@
+.addCourseContainer {
+  :global {
+    .add-course-inner-container {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      hr {
+        background: #293a68;
+      }
+      .course-details-container {
+        .ant-form-item {
+          margin-bottom: 3px;
+        }
+        .flex > .ant-row {
+          flex: 0 0 45%;
+        }
+        .actions-container {
+          margin-top: 24px;
+        }
+      }
+      .course-details-container,
+      .group-sessions-container {
+        flex: 0 0 25%;
+        border-right: solid 1px #ddd;
+      }
+      .calendar-utilities-container {
+        flex: 1 1 50%;
+      }
+      .group-sessions-container,
+      .calendar-utilities-container,
+      .course-details-container {
+        padding: 0px 30px;
+      }
+    }
+  }
+}
+
+.addCourseGTS {
+  :global {
+    .gts-container {
+      .ant-card {
+        margin: 12px 0px;
+        width: 100%;
+        .sessionActions {
+          text-align: right;
+          .delete:hover {
+            color: red;
+          }
+        }
+        .ant-row {
+          margin-bottom: 6px;
+          display: flex;
+          .ant-form-item-label {
+            flex: 0 0 106px;
+          }
+          .ant-form-item-control {
+            .ant-picker,
+            .ant-input,
+            .ant-select {
+              width: 180px;
+            }
+          }
+        }
+      }
+    }
+    .gts-form .ant-row {
+      margin-bottom: 5px;
+    }
+    .timezone-warning {
+      font-size: 0.6em;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.75em;
+      margin: 3px 0px;
+    }
+  }
+}

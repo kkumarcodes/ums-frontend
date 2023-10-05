@@ -1,0 +1,8 @@
+.courseFilter {
+  margin-right: auto;
+}
+
+.courseFilter :global .search .ant-btn.ant-input-search-button {
+  margin-left: 0;
+}
+/*# sourceMappingURL=Course.css.map */
