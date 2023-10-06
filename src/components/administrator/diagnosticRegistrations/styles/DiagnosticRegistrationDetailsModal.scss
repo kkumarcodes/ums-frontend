@@ -1,0 +1,16 @@
+.diagRegDetailsModal {
+  :global {
+    .row {
+      display: flex;
+      justify-content: left;
+    }
+    label {
+      font-weight: bold;
+      color: #293a68;
+    }
+    label,
+    p {
+      flex: 0 1 33%;
+    }
+  }
+}
