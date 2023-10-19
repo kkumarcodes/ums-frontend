@@ -1,0 +1,63 @@
+
+.submitTaskModal {
+  :global {
+    // Removed .ant-model-body & .ant-model-header center for demo purposes
+    .ant-modal-title {
+      text-align: center;
+      font-weight: 600;
+      color: #293a68 !important;
+    }
+    .ant-modal-body {
+      padding: 24px;
+      max-height: 70vh;
+      overflow-y: scroll;
+    }
+    .task-desc-header {
+      color: white;
+      background: #293a68;
+      text-align: center;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    .task-resources {
+      margin: 12px 0px;
+    }
+
+    .task-resource-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .task-title {
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+      margin: 0px 10px 0px 10px;
+      width: fit-content;
+    }
+
+    .task-desc-wrapper {
+      border-bottom: 1px dotted darkgray;
+      .task-desc {
+        color: #293a68;
+        white-space: pre-line;
+        a {
+          color: #04acec;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .input-container {
+      hr {
+        background: #ddd;
+        height: 3px;
+        border: none;
+        margin: 24px 0px;
+      }
+    }
+  }
+}

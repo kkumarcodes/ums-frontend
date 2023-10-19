@@ -1,0 +1,47 @@
+.bulletinSummary {
+  :global {
+    .bulletins {
+      .bulletin {
+        align-items: center;
+        padding: 20px;
+        margin: 0px 20px;
+        border-bottom: solid 1px #808080;
+        &:last-of-type {
+          border-bottom-width: 0px;
+        }
+        cursor: pointer;
+        .icon {
+          width: 60px;
+          text-align: right;
+          padding-right: 2 * 20px;
+          .anticon {
+            color: #ff8d47;
+          }
+          .pin {
+            color: #293a68;
+            margin-right: 20px/2;
+          }
+        }
+        &:hover {
+          .icon .anticon {
+            color: #293a68;
+          }
+        }
+        .content {
+          flex: 1 1 80%;
+          text-align: left;
+          .date {
+            color: #808080;
+          }
+        }
+        p {
+          margin: 0;
+          margin-bottom: 20px/4;
+        }
+      }
+      .bulletin:nth-of-type(even) {
+        background: #e7e7e7;
+      }
+    }
+  }
+}

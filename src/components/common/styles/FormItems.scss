@@ -1,0 +1,36 @@
+.wrapperFormControl {
+  display: flex;
+  justify-content: flex-end;
+
+  :global {
+    .buttonCancel {
+      margin-right: 10px;
+    }
+  }
+}
+
+.wrapperRangePicker {
+  :global {
+    .ant-picker-input > input {
+      text-align: center;
+    }
+  }
+}
+
+.editableText {
+  width: 100%;
+  white-space: pre-wrap;
+  :global {
+    .placeholder {
+      color: #808080;
+      font-style: italic;
+    }
+    .non-form-item {
+      display: flex;
+      align-items: flex-end;
+      .ant-btn {
+        margin-left: 12px;
+      }
+    }
+  }
+}

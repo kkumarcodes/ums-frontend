@@ -1,0 +1,99 @@
+.tutoringSessionsCalendar {
+  height: 800px;
+}
+
+.tutoringSessionsCalendar :global .title-accessor-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tutoringSessionsCalendar :global .calendar-event-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tutoringSessionsCalendar :global .rbc-event {
+  font-size: 0.8em;
+}
+
+.tutoringSessionsCalendar :global .actions {
+  margin-bottom: 24px;
+}
+
+.tutoringSessionsCalendar :global .rbc-header {
+  padding: 6px 0px;
+  border-bottom: none;
+}
+
+.tutoringSessionsCalendar :global .rbc-allday-cell {
+  display: none;
+}
+
+.calendarLoader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calendarLoader .calendarSpinner {
+  font-size: 5rem;
+}
+
+:global .container-tutoring-session-cal-modal .ant-modal-confirm-content {
+  margin-left: 8px !important;
+}
+
+:global .container-tutoring-session-cal-modal .ant-modal-confirm-btns [disabled] {
+  display: none;
+}
+
+:global .wrapper-tutoring-session-calendar-event-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+:global .wrapper-tutoring-session-calendar-event-detail:first-child {
+  padding-top: 0.5em;
+}
+
+:global .wrapper-tutoring-session-calendar-event-detail .event-detail-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2em 0;
+}
+
+:global .wrapper-tutoring-session-calendar-event-detail .event-detail-label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  text-align: right;
+  font-weight: 600;
+}
+
+:global .wrapper-tutoring-session-calendar-event-detail .event-detail-value {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  padding-left: 1em;
+}
+/*# sourceMappingURL=TutoringSessionsCalendar.css.map */

@@ -1,0 +1,78 @@
+.diagnosticResultKanbanCard {
+  background: white;
+  border: solid 2px #ccc;
+  border-left-width: 6px;
+  border-bottom-width: 6px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.17);
+  margin-bottom: 24px;
+  padding: 4px 12px;
+
+  :global {
+    .flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    .tooltipIcon {
+      cursor: pointer;
+      color: red;
+      font-weight: bold;
+    }
+    .name {
+      font-weight: bold;
+    }
+    .details {
+      margin: 4px 0px;
+    }
+    .noDownloads {
+      color: #aaa;
+    }
+    p {
+      margin: 0;
+    }
+    .ant-btn-link {
+      padding: 0;
+      margin-top: -4px;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+
+    .actionsContainer {
+      margin-top: 8px;
+      margin-bottom: 4px;
+      padding-top: 8px;
+      border-top: solid 1px #ddd;
+      flex-direction: row-reverse;
+      &.reverse {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+.diagnosticResultKanbanCardPopover {
+  width: 220px;
+  :global {
+    .flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    .inputContainer {
+      margin-bottom: 6px;
+      .ant-input {
+        height: 25px;
+      }
+      label {
+        font-weight: bold;
+        margin-top: 6px;
+        margin-right: 5%;
+      }
+    }
+    .ant-upload-select {
+      text-align: right;
+    }
+    .ant-upload-list-item-name {
+      max-width: 200px;
+    }
+  }
+}

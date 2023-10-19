@@ -1,0 +1,14 @@
+.counselingFileUploads {
+  :global {
+    .edit-container {
+      width: 80px;
+    }
+    .toolbar {
+      display: flex;
+      margin-bottom: 24px;
+      & > div {
+        flex: 1 1 50%;
+      }
+    }
+  }
+}

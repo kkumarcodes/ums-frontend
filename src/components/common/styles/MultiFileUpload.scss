@@ -1,0 +1,13 @@
+.multiFileUpload {
+  :global {
+    .file-upload-target {
+      border-color: #888;
+    }
+    .files-list {
+      margin-top: 20px/2;
+      label {
+        margin-right: 20px/2;
+      }
+    }
+  }
+}

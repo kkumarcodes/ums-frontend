@@ -1,0 +1,41 @@
+.SmartStudentHighSchoolCourseTable {
+  :global {
+    .error-msg {
+      color: red;
+      font-weight: bold;
+    }
+    .add-course-wrapper {
+      flex-direction: row-reverse;
+      margin-bottom: 16px;
+    }
+    .cw-equivalent-col {
+      width: 100% !important;
+      .ant-input-number-handler-wrap {
+        display: none;
+      }
+    }
+    .checked-box,
+    .unchecked-box {
+      font-size: 18px;
+    }
+    .level-col,
+    .grade-col,
+    .semester-col {
+      width: 100%;
+    }
+    .actions-col {
+      display: flex;
+      justify-content: center;
+      .btn-delete {
+        color: red;
+      }
+      .btn-cancel {
+        margin-right: 8px;
+        color: orange;
+      }
+      .btn-save {
+        color: #04acec;
+      }
+    }
+  }
+}

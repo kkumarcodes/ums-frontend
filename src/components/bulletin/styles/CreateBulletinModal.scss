@@ -1,0 +1,41 @@
+.createBulletinModal {
+  :global {
+    .form-group {
+      margin: 20px 0px;
+    }
+    .form-group.flex {
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 20px;
+      label,
+      .ant-checkbox,
+      .ant-select {
+        margin-right: 20px;
+      }
+    }
+    .form-group.select-container,
+    .form-group.datetime-container {
+      justify-content: space-between;
+      .ant-select {
+        width: 300px;
+      }
+    }
+    .datetime-container {
+      padding-right: 10px;
+    }
+    .file-attachments {
+      margin: 20px * 2;
+    }
+  }
+}
+.createBulletinContent {
+  :global {
+    label {
+      font-weight: bold;
+    }
+    .rich-text-container {
+      margin-top: 2 * 20px;
+      margin-bottom: 20px;
+    }
+  }
+}

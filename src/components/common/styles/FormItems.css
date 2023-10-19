@@ -1,0 +1,31 @@
+.wrapperFormControl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wrapperFormControl :global .buttonCancel {
+  margin-right: 10px;
+}
+
+.wrapperRangePicker :global .ant-picker-input > input {
+  text-align: center;
+}
+
+.editableText {
+  width: 100%;
+}
+
+.editableText :global .non-form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.editableText :global .non-form-item .ant-btn {
+  margin-left: 12px;
+}
+/*# sourceMappingURL=FormItems.css.map */

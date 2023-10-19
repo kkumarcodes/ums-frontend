@@ -1,0 +1,30 @@
+@import 'style/administrator/variables';
+
+.tabsContainer {
+  margin-right: 50px;
+}
+
+.error {
+  margin-right: 20px;
+  color: #f5222d;
+  font-weight: 600;
+}
+
+.actionsContainer {
+  text-align: right;
+  margin-bottom: 32px;
+}
+
+.selectInput {
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.wideSelect {
+  min-width: 600px;
+  max-width: 600px;
+}
+
+.viewDiagnostics {
+  margin-top: 48px;
+}

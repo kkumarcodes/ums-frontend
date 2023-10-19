@@ -1,0 +1,272 @@
+.SchoolProfilePage {
+  font-size: 16px;
+  max-width: 1400px;
+  :global {
+    .school-profile-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 48px;
+    }
+    .social-container {
+      justify-content: space-between;
+      margin: auto;
+      padding-bottom: 12px;
+      border-bottom: solid 2px #ddd;
+      width: 220px;
+      .ant-btn {
+        background: #04acec !important;
+        border: none;
+        transition: 0.3s ease-in-out all;
+        outline: none;
+        &:hover {
+          cursor: pointer;
+          color: white;
+          background-color: #293a68 !important;
+          border: 1px solid #293a68;
+        }
+      }
+    }
+    .school-details-container {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      width: 800px;
+    }
+    .school-information,
+    .school-cost {
+      width: 48%;
+      border: 2px solid #293a68;
+      padding: 16px;
+      .header {
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      .info-wrapper {
+        padding-left: 16px;
+        line-height: 32px;
+        &:first-of-type {
+          margin-bottom: 8px;
+        }
+      }
+      .info-icon {
+        margin-right: 8px;
+        font-size: 18px;
+      }
+      .info-value {
+        margin-right: 8px;
+        font-size: 18px;
+      }
+      .school-selectivity {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .link-row {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .school-link,
+    .school-link:visited,
+    .school-link:active {
+      width: 220px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: #04acec;
+      border: 1px solid #04acec;
+      transition: 0.3s ease-in-out all;
+      outline: none;
+      &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #293a68;
+        border: 1px solid #293a68;
+      }
+    }
+    .wisernet-toolbar {
+      align-items: flex-start;
+      .ant-select,
+      .ant-btn {
+        width: 100px;
+        margin-left: 0px;
+      }
+      .in-state,
+      .deadline {
+        align-items: flex-start;
+        margin-left: 3 * 20px;
+        .ant-checkbox-wrapper {
+          margin: 0;
+        }
+      }
+    }
+    .campus-reel-and-school-links-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8 * 20px;
+      #campusreel {
+        display: flex;
+        flex-direction: column;
+      }
+      .campus-reel-container {
+        border: 2px solid #293a68;
+        padding: 2 * 20px;
+        width: 64%;
+        .header {
+          font-size: 20px;
+        }
+      }
+      .campus-reel-content {
+        .campusreel-videos-carousel {
+          height: 100%;
+          overflow: hidden;
+          width: 100%;
+          text-align: unset;
+        }
+        .campusreel-carousel-scroll {
+          max-width: unset;
+          min-width: unset;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          padding: 20px 2.5 * 20px 0;
+          margin-bottom: 20px;
+          @media (max-width: 1500px) {
+            padding: 20px 20px 0;
+          }
+          @media (max-width: 1400px) {
+            padding: 20px 2 * 20px 0;
+          }
+          @media (max-width: 1350px) {
+            padding: 20px 0 0;
+          }
+        }
+        .campusreel-video-aspect-ratio {
+          max-width: 320px;
+          min-width: 260px;
+          height: 220px;
+          width: 48%;
+          margin: unset;
+          margin-bottom: 2 * 20px;
+          @media (max-width: 1500px) {
+            min-width: unset;
+            width: 280px;
+            height: 190px;
+          }
+          @media (max-width: 1400px) {
+            width: 250px;
+            height: 170px;
+          }
+          @media (max-width: 1350px) {
+            width: 230px;
+            height: 160px;
+          }
+        }
+        .empty-image {
+          width: 50%;
+          margin: 3 * 20px auto;
+        }
+        .empty-placeholder {
+          text-align: center;
+        }
+      }
+      .school-research-links {
+        border: 2px solid #293a68;
+        padding: 16px;
+        width: 32%;
+        .header {
+          font-size: 20px;
+        }
+        .research-links {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+        }
+        .school-link {
+          margin: 32px 0 16px;
+          font-size: 16px;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .test-scores-container {
+      border: 2px solid #293a68;
+      padding: 32px;
+      margin-bottom: 48px;
+      .header {
+        font-size: 20px;
+        margin-bottom: 32px;
+      }
+      .test-stats-container {
+        display: flex;
+        justify-content: space-between;
+        .chart {
+          height: 300px;
+          width: 46%;
+        }
+        .test-stats-copy {
+          color: #808080;
+          text-align: right;
+        }
+      }
+    }
+
+    .scatter-and-stacked-outer-container {
+      border: 2px solid #293a68;
+      padding: 16px;
+      margin-bottom: 48px;
+
+      .scatter-and-stacked-inner-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .header {
+        font-size: 20px;
+      }
+      .test-stats-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 62%;
+      }
+      .scatter {
+        height: 400px;
+      }
+      .stacked-chart {
+        height: 420px;
+        width: 33%;
+        align-self: flex-end;
+      }
+    }
+    .scatter-container-empty {
+      display: flex;
+      height: 400px;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 100px;
+    }
+    .tabbed-details-container {
+      border: 2px solid #293a68;
+      padding: 32px;
+      margin: 56px 0 32px;
+      .essay-requirements-frame {
+        width: 100%;
+        height: 1400px;
+      }
+    }
+    .card-wrapper {
+      position: relative;
+      padding-right: 14px;
+      margin-left: 32px;
+      top: -25px;
+    }
+  }
+}

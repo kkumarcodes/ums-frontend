@@ -1,0 +1,14 @@
+.selectPackageOption {
+  border-bottom: solid 1px #293a68;
+  :global {
+    p {
+      margin: 2px 0px;
+    }
+    .title {
+      font-weight: bold;
+    }
+    .hours {
+      font-size: 0.75em;
+    }
+  }
+}

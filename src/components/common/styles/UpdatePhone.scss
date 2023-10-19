@@ -1,0 +1,8 @@
+.updatePhone {
+  margin: 20px 0px;
+  :global {
+    .ant-input-group-wrapper {
+      width: 260px;
+    }
+  }
+}

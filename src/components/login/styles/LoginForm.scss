@@ -1,0 +1,52 @@
+.loginForm {
+  width: 600px;
+  max-width: 100%;
+  margin: 100px auto;
+  border: solid 1px #293b68;
+  padding: 12px;
+  box-shadow: 0px 0px 14px 1px #ccc;
+
+  :global {
+    .ant-form-item-no-colon {
+      //   justify-content: space-between;
+      font-size: 16pt;
+      color: #293a68;
+      // margin: 10px 0px;
+    }
+
+    .ant-form-item-label {
+      flex: 0 0 200px;
+      text-align: left;
+    }
+
+    .ant-form-item-control {
+      flex: 1 1 50%;
+    }
+
+    .demo-buttons {
+      text-align: center;
+      padding: 20px 0px;
+      margin: 20px 0px;
+      border-top: solid 2px #293a68;
+
+      .ant-btn {
+        margin: 10px;
+      }
+    }
+
+    .logo {
+      width: 100%;
+      margin-bottom: 50px;
+      text-align: center;
+      img {
+        width: 34%;
+      }
+    }
+
+    .version {
+      font-size: 9px;
+      margin-top: 48px;
+      background: #eee;
+    }
+  }
+}

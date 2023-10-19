@@ -1,0 +1,6 @@
+.updatePhone :global .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=UpdatePhone.css.map */

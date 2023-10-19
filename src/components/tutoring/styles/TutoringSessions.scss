@@ -1,0 +1,45 @@
+.tutoringSessionsContainer {
+  background-color: white;
+  margin: 20px 20px 0px;
+  padding: 30px;
+
+  :global {
+    .header {
+      color: #293a68;
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: 0.6px;
+    }
+
+    .ant-tabs-nav {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 600;
+      font-size: 16px;
+
+      .ant-tabs-tab-active {
+        font-weight: bold;
+        color: #04acec !important;
+      }
+
+      .ant-tabs-tab:hover {
+        color: #04acec;
+      }
+    }
+
+    .actions .help {
+      font-size: 0.5em;
+      margin-top: 8px;
+      color: #333;
+    }
+
+    .ant-tabs-bar {
+      border-bottom: none;
+    }
+
+    .ant-tabs-ink-bar {
+      border-bottom: 3px solid #04acec;
+      bottom: 5px;
+    }
+  }
+}

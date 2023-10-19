@@ -1,0 +1,62 @@
+$border-color: #d9e8fa;
+
+.tutoringSessionsFilter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  margin-bottom: 32px;
+
+  :global {
+    .search-range-picker-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-wrapper {
+      width: 350px;
+
+    }
+
+    .range-picker {
+      margin-left: 32px;
+
+      .ant-picker-input>input {
+        text-align: center;
+      }
+    }
+
+    .session-type-dropdown {
+      margin-left: auto;
+    }
+
+    .session-status-dropdown {
+      margin-left: 10px;
+    }
+
+    .note-status-dropdown {
+      margin-left: 10px;
+    }
+
+    .menu-checkbox-span {
+      margin-left: 8px
+    }
+
+    .buttonCSV {
+      position: relative;
+      bottom: 2px;
+      margin-left: 30px;
+    }
+  }
+}
+
+// Dropdown is rendered outside of component (hence global selector)
+:global {
+  .ant-dropdown-menu-item-selected {
+    background-color: transparent !important;
+  }
+
+  .ant-dropdown-menu-item-active {
+    background-color: #e6f7ff !important;
+  }
+}

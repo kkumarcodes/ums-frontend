@@ -1,0 +1,39 @@
+.chatBubbleIncoming {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+
+  :global {
+    .message-bubble-inner {
+      background: #293a68;
+      color: white;
+      text-align: left;
+      margin: 6px 0px;
+      padding: 4px 12px;
+      border-radius: 12px;
+      max-width: 65%;
+      span {
+        display: block;
+      }
+    }
+  }
+}
+.chatBubbleOutgoing {
+  display: flex;
+  width: 100%;
+
+  :global {
+    .message-bubble-inner {
+      background: #aaa;
+      color: #293a68;
+      text-align: left;
+      margin: 6px 0px;
+      padding: 6px 12px;
+      border-radius: 12px;
+      max-width: 65%;
+      span {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.chatConversationInputForm {
+  width: 100%;
+  display: flex;
+  :global {
+    .ant-btn {
+      margin-left: 24px;
+    }
+    .ant-input {
+      resize: none;
+    }
+  }
+}

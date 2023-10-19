@@ -1,0 +1,36 @@
+.SUDNoteModal {
+  :global {
+    .edit-sud-note {
+      padding-left: 20px * 1.5;
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+    .sud-note {
+      margin: 20px / 2 0px;
+      .sud-title {
+        padding: 20px / 2;
+        cursor: pointer;
+        &:hover {
+          background: #ddd;
+        }
+      }
+      .note {
+        margin-top: 20px / 2;
+      }
+    }
+    .closing-thoughts-wrapper {
+      margin-top: 20px * 2;
+    }
+    .closing-thoughts {
+      text-align: left;
+      padding: 20px * 0.5 11px; // matches textarea padding
+    }
+    .open-research-form-btn {
+      margin-right: 20px * 2;
+    }
+    .edit-note-btn-wrapper {
+      margin: 2 * 20px 0 20px * 0.5;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.sudCard {
+  padding: 12px;
+  background: white;
+  border: solid 2px #293a68;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.38);
+  margin: 24px 0px;
+  width: 25vw;
+  min-width: 250px;
+  max-width: 400px;
+  :global {
+    // This is needed to negate a bug in Chrome 90
+    .title {
+      padding: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .link-wrapper {
+        .invisible {
+          visibility: hidden;
+        }
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .school-rating {
+          width: 40px;
+          font-weight: bold !important;
+          color: white !important;
+        }
+        .rating-value {
+          position: relative;
+          bottom: 1px;
+        }
+        .research-completed-icon {
+          width: 10px;
+          color: white !important;
+          margin-right: 20px * 3;
+        }
+      }
+      h3 {
+        margin: 0;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        transition: 0.4s ease-in-out all;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+        .anticon {
+          margin-left: 8px;
+        }
+      }
+      background: #293a68;
+      &.likely {
+        background: #06cfc3;
+      }
+      &.target,
+      &.target_likely {
+        background: #04acec;
+      }
+      &.target_reach {
+        background: #ff8d47;
+      }
+      &.far_reach,
+      &.reach {
+        background: #ff6271;
+      }
+      .expand-collapse-btn {
+        color: #fff;
+        font-size: 18px;
+        transition: 0.4s ease-in-out all;
+        padding: 0;
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+    .deadline-selector-container-header {
+      background: #293a68;
+      color: white;
+      margin: -12px;
+      margin-bottom: 12px;
+      padding: 4px 0px;
+    }
+    .research-container {
+      margin-bottom: 12px;
+      text-align: center;
+      .ant-btn {
+        width: 50%;
+      }
+    }
+    .note-container {
+      padding-top: 12px;
+      color: black;
+      .student-note {
+        max-height: 160px;
+        overflow-y: hidden;
+      }
+    }
+    .university-stats-container,
+    .target-reach-safety-container {
+      display: flex;
+      justify-content: center;
+      p {
+        margin: 0;
+      }
+      & > div,
+      & > p {
+        flex: 1 1 50%;
+        text-align: center;
+      }
+    }
+    .university-stats-container {
+      background: #ddd;
+      color: #293a68;
+      margin: 12px 0px;
+    }
+    .target-reach-safety-container {
+      .interest-circle {
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        border-radius: 50%;
+        background: #293a68;
+        color: white;
+        padding-top: 2px;
+      }
+      .ant-select {
+        width: 160px;
+      }
+      .task-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: right;
+        .tasks-text {
+          margin-left: 6px;
+        }
+      }
+    }
+    .is-applying-container {
+      background: #ddd;
+      margin: -12px;
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        flex: 0 0 30%;
+      }
+      .ant-btn {
+        color: #333;
+      }
+      .collapsible-container {
+        .ant-btn {
+          color: #aaa;
+          &:hover {
+            color: #333;
+          }
+        }
+      }
+    }
+    .icons-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0px;
+      .single-icon {
+        width: 15px;
+        margin: 0px 2.5px;
+      }
+    }
+  }
+}

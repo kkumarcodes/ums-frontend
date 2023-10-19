@@ -1,0 +1,61 @@
+.CounselingStudentActivityTable {
+  margin: 16px 0px;
+  :global {
+    .error-msg {
+      color: red;
+      font-weight: bold;
+    }
+    .add-activity-wrapper {
+      flex-direction: row-reverse;
+    }
+    .max-character-count {
+      font-size: 0.75em;
+      color: #333;
+      text-align: right;
+      &.red {
+        color: red;
+      }
+    }
+    .add-activity-btn {
+      margin-bottom: 8px;
+    }
+    .select-ca-category {
+      width: 220px;
+    }
+    .participation-form {
+      width: 275px;
+      label:not(.ant-checkbox-wrapper) {
+        flex: 0 0 90px;
+      }
+      .ant-checkbox-wrapper {
+        margin: 0 !important;
+      }
+      .grades {
+        flex-wrap: wrap;
+        .ant-checkbox-wrapper {
+          flex: 0 0 50%;
+        }
+      }
+    }
+    .vertical-display,
+    .vertical-form {
+      label:not(.ant-checkbox-wrapper) {
+        font-weight: bold;
+      }
+      .flex {
+        margin: 4px 0px;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    // Removes increment/decrement arrows to conserve space
+    .ant-input-number-handler-wrap {
+      display: none;
+    }
+    .hpw-col,
+    .wpy-col {
+      width: 100%;
+    }
+  }
+}

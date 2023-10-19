@@ -1,0 +1,129 @@
+.counselorMeetingModal {
+  :global {
+    .ant-modal-body {
+      padding-top: 0px;
+    }
+    .ant-steps {
+      padding: 20px * 2;
+      background: rgb(237, 237, 237);
+      margin: 0px -24px;
+      margin-bottom: 20px * 4;
+      width: calc(100% + 48px);
+    }
+    .table-header,
+    .agenda-item-row,
+    .meeting-task-row {
+      display: flex;
+      width: 100%;
+      padding: 20px 0px;
+      margin: 20px 0px;
+      border-bottom: solid 3px #ddd;
+      .close {
+        flex: 0 0 30px;
+      }
+      .agenda-item,
+      .task {
+        flex: 1 1 50%;
+      }
+    }
+    .remove-item,
+    .add-item {
+      position: relative;
+      top: -5px;
+      transition: transform 0.2s linear, color 0.2s linear;
+      transform: rotate(0deg);
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+    .remove-item:hover {
+      color: #ff6271;
+    }
+    .add-item {
+      color: #06cfc3;
+    }
+    .add-custom {
+      margin-top: 2 * 20px;
+      .ant-select {
+        width: 100%;
+      }
+    }
+    .section-header {
+      margin-top: 20px * 2;
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}
+.counselorMeetingAgendaItems {
+  :global {
+    .agenda-item {
+      display: flex;
+      justify-content: space-between;
+    }
+    .agenda-items-table {
+      .agenda-item-row .agenda-item {
+        padding-left: 2 * 20px;
+        padding-right: 2 * 20px;
+        &.strikethrough {
+          text-decoration: line-through;
+        }
+      }
+
+      .table-header,
+      .agenda-item-row {
+        .tasks {
+          flex: 0 0 10%;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+.counselorMeetingTasks {
+  :global {
+    .table-header .task,
+    .task-schools-container {
+      padding-left: 3 * 20px;
+    }
+    .table-header {
+      padding-bottom: 20px;
+      border-bottom-color: #293a68;
+    }
+    .task-schools-container {
+      flex: 1 1 81%;
+      .tasks {
+        font-weight: bold;
+      }
+    }
+    .schools {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 20px / 2;
+      padding-top: 20px / 2;
+      margin-bottom: 20px;
+      .ant-select {
+        margin-left: 2 * 20px;
+        margin-right: 2 * 20px;
+        flex: 1 1 200px;
+      }
+    }
+    .meeting-task-row {
+      align-items: center;
+    }
+    .table-header,
+    .meeting-task-row {
+      .task-due {
+        flex: 0 0 12%;
+        .ant-picker {
+          border: none;
+          border-bottom: solid 1px #ddd;
+          position: relative;
+          bottom: 20px;
+        }
+      }
+    }
+  }
+}

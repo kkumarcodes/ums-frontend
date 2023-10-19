@@ -1,0 +1,63 @@
+.taskFormListPage {
+  :global {
+    .form-list {
+      list-style: none;
+      font-size: 16px;
+    }
+  }
+}
+
+.taskFormDetailPage {
+  :global {
+    .loading-container {
+      display: flex;
+      justify-content: center;
+      padding-top: calc(20vh);
+      height: calc(100vh - 63px);
+      font-size: 5rem;
+      width: 100%;
+    }
+  }
+}
+
+.taskFormContainer {
+  :global {
+    .form-header {
+      padding: 20px 0 10px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.taskFormWrapper {
+  margin: 20px auto;
+
+  :global {
+    .ant-input-disabled,
+    .ant-input[disabled] {
+      color: unset;
+      background-color: unset;
+    }
+    .ant-select-disabled {
+      .ant-select-selector {
+        background: unset !important;
+        color: unset !important;
+      }
+    }
+    .ant-form-item-label > label {
+      display: inline-block;
+      font-weight: 600;
+      color: #293a68;
+    }
+    .ant-form-item-control {
+      margin: 10px 0 20px;
+    }
+    .ant-form-item-label > label.ant-form-item-required::before {
+      font-size: 28px;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

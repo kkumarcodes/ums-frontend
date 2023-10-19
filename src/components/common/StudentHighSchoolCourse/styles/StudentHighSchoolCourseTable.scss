@@ -1,0 +1,33 @@
+.studentHighSchoolCourseTable {
+  :global {
+    .cw-gpa {
+      font-weight: bold;
+      margin-right: 2 * 20px;
+    }
+    .grades-and-credits {
+      label {
+        text-align: center;
+        display: block;
+      }
+      .grades {
+        margin-bottom: 2 * 20px;
+      }
+    }
+    .cw-equiv-col {
+      vertical-align: baseline;
+      text-align: center;
+    }
+    .items {
+      display: flex;
+      justify-content: space-between;
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span.help {
+          color: #808080;
+        }
+      }
+    }
+  }
+}

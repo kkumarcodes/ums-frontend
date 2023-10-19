@@ -1,0 +1,64 @@
+.resourceManager {
+  display: flex;
+  height: 50vh;
+  border: solid 1px #808080;
+  :global {
+    .f-subtitle-2 {
+      margin-bottom: 20px / 2;
+    }
+    .resource-groups-container {
+      flex: 0 0 300px;
+      height: 100%;
+      border-right: solid 2px #808080;
+      overflow-y: scroll;
+      padding: 20px;
+      .ant-badge {
+        position: relative;
+        top: -1px;
+        margin-left: 20px;
+        .ant-badge-count {
+          background-color: #293a68;
+        }
+      }
+      .f-subtitle-2 {
+        padding-left: 16px;
+      }
+      .ant-menu-item-selected {
+        background-color: #293a68 !important;
+        color: white;
+        margin-right: -1px; // To ensure background abutts border
+      }
+      .anticon {
+        margin-left: 20px * 3;
+      }
+    }
+    .resources-container {
+      flex: 1 1 80%;
+      height: 100%;
+      padding: 20px;
+      .table-container {
+        height: calc(100% - 100px);
+        overflow-y: scroll;
+      }
+      .header-toolbar {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        .f-subtitle-2 {
+          flex: 1 1 50%;
+        }
+        .search-container {
+          flex: 0 0 140px;
+          margin-left: 20px * 2;
+        }
+        .add-resource-form {
+          margin-right: 20px * 2;
+        }
+        .ant-select {
+          width: 260px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

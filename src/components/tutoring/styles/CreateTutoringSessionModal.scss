@@ -1,0 +1,222 @@
+.createTutoringSessionModal {
+  @media (max-width: 576px) {
+    width: 100vw !important;
+    margin: unset !important;
+    top: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    bottom: 0px !important;
+    max-width: unset !important;
+    position: absolute;
+    transform-origin: unset !important;
+    padding: 0 !important;
+  }
+
+  :global {
+    .modal-footer {
+      display: flex;
+      justify-content: space-between;
+      .ant-checkbox-wrapper {
+        margin-right: 4px;
+      }
+      .tentative-container {
+        text-align: left;
+      }
+      .buttons-container {
+        text-align: right;
+        flex: 0 0 41%;
+      }
+    }
+    .ant-modal-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .app-tab-container {
+      text-align: center;
+      margin-bottom: 8px;
+      font-family: 'Rokkitt', serif;
+    }
+
+    .ant-modal-title {
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .app-toggle-buttons {
+      padding: 12px 80px;
+      color: #293a68;
+    }
+
+    .options-header {
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .ind-session-form-item {
+        flex: 1 1 45%;
+        padding: 0.5% 1.5%;
+        .ant-select {
+          width: 100%;
+        }
+      }
+
+      .render-select-student,
+      .render-select-tutor {
+        margin-bottom: 6px;
+      }
+
+      .duration-custom-session-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 6px;
+
+        .ind-session-form-item {
+          padding: 0.5% 1.5%;
+        }
+
+        .custom-session {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+        }
+        .custom-session-button {
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 0.5% 1.5%;
+        }
+      }
+
+      label {
+        margin-right: 4px;
+        font-weight: bold;
+      }
+    }
+
+    .custom-datetime-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 0 1.5%;
+      .date-wrapper,
+      .time-wrapper {
+        width: 100%;
+        flex: 1 1 45%;
+      }
+      .date-wrapper {
+        margin-right: 3%;
+      }
+      .ant-picker {
+        width: 100%;
+      }
+      label {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+
+    .note-container {
+      margin-top: 24px;
+    }
+
+    .individual-session-times {
+      margin-top: 12px;
+      max-height: 45vh;
+      overflow-y: scroll;
+
+      @media (max-width: 576px) {
+        max-height: calc(100vh - 340px);
+      }
+    }
+
+    .individual-session-container.remove-top-margin {
+      margin-top: 0px;
+    }
+
+    .purchase-link {
+      color: #04acec;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .containerInsufficientHoursPrompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .credit-card-png {
+      width: 292px;
+      height: 225px;
+      padding: 20px;
+    }
+
+    .prompt {
+      align-self: flex-start;
+      font-weight: 600;
+    }
+
+    .ant-modal-footer {
+      margin-top: auto;
+    }
+    .ant-modal-body {
+      padding-top: 0px;
+    }
+
+    @media (max-width: 576px) {
+      .ant-modal-body {
+        padding: 16px;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+
+        .modal-errors {
+          margin-bottom: 0px;
+        }
+      }
+
+      .ant-modal-content {
+        top: 60px;
+        height: calc(100vh - 120px);
+      }
+
+      .ant-select {
+        width: unset;
+      }
+    }
+  }
+}
+
+.timeSelectedContainer {
+  border-left: solid 5px #293a68;
+  padding-left: 6px;
+  font-size: 1.25em;
+
+  label {
+    margin: 0px 6px;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.sessionRepeatOptions {
+  margin-top: 12px;
+  :global {
+    .form-group {
+      margin: 4px 0px;
+    }
+    .inline-select .ant-select {
+      margin: 0px 8px;
+    }
+  }
+}

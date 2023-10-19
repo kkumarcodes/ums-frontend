@@ -1,0 +1,75 @@
+$table-header-text: #20272d;
+$tag-border-color: #d9d9d9;
+
+.wrapperTutoringSessionsTable {
+  margin-bottom: 32px;
+
+  :global {
+    .student-name-tag {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .tagResource {
+      border: 1px solid $tag-border-color;
+      transition: all 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        color: #04acec;
+        border: 1px solid #04acec;
+      }
+    }
+
+    .buttonNoteStatus {
+      text-decoration: underline;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: none;
+      font-weight: 600;
+
+      &:hover {
+        color: #04acec;
+        cursor: pointer;
+      }
+    }
+
+    .ant-table {
+      position: relative;
+      font-size: 14px;
+    }
+
+    .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+    .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+    .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+    .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+      background: rgba(222, 242, 251, 0.3);
+    }
+
+    .firstColumn {
+      background-color: rgba(222, 242, 251, 0.3);
+      width: 200px;
+    }
+
+    .ant-table-thead > tr > th {
+      padding: 10px 15px !important;
+    }
+
+    .ant-table-thead {
+      .ant-table-column-title {
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        color: $table-header-text;
+      }
+    }
+
+    .btn-roster {
+      text-align: center;
+    }
+
+    .btn-cancel {
+      margin-left: 6px;
+    }
+  }
+}

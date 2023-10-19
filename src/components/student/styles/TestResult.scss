@@ -1,0 +1,19 @@
+.testResultTable {
+  :global {
+    p.score,
+    p.test-type {
+      margin-bottom: 2px;
+    }
+    .test-result-search {
+      width: 250px;
+      margin-right: 20px * 2;
+    }
+  }
+}
+.testResultForm {
+  :global {
+    .ant-select {
+      width: 200px !important;
+    }
+  }
+}

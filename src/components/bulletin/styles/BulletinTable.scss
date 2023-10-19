@@ -1,0 +1,11 @@
+.bulletinTable {
+  :global {
+  }
+}
+.bulletinReadersModal {
+  :global {
+    .students, .parents {
+      padding: 20px 20px*3;
+    }
+  }
+}

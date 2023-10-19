@@ -1,0 +1,25 @@
+@import 'style/administrator/variables';
+
+.table {
+  :global {
+    .editButton {
+      margin-right: 4px;
+    }
+  }
+}
+
+
+.nameLink {
+  color: #04acec;
+
+  &:hover {
+    color: #293a68;
+  }
+}
+
+.emailLink {
+  &:hover {
+    color: #04acec;
+    cursor: pointer;
+  }
+}

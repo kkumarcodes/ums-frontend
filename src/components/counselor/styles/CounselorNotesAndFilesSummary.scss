@@ -1,0 +1,32 @@
+.CounselorNotesAndFilesSummary {
+  margin-top: 24px !important;
+  :global {
+    .ant-card-body {
+      display: flex;
+      justify-content: space-between;
+    }
+    .files-container {
+      flex: 0 0 55%;
+    }
+    .notes-outer-container {
+      flex: 0 0 40%;
+      .notes-inner-container {
+        max-height: 300px;
+        overflow-y: scroll;
+        .counselor-note {
+          margin: 8px 0px;
+          padding: 8px 0px;
+          border-bottom: solid 1px #ddd;
+        }
+        .counselor-note-content {
+          display: inline;
+          transition: all 0.4s ease;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

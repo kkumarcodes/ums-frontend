@@ -1,0 +1,90 @@
+.tutoringSessionsCalendar {
+  height: 800px;
+
+  :global {
+    .title-accessor-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+    .calendar-event-title {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .rbc-event {
+      font-size: 0.8em;
+    }
+
+    .actions {
+      margin-bottom: 24px;
+    }
+
+    .rbc-header {
+      padding: 6px 0px;
+      border-bottom: none;
+    }
+
+    .rbc-allday-cell {
+      display: none;
+    }
+  }
+}
+
+.calendarLoader {
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+
+  .calendarSpinner {
+    font-size: 5rem;
+  }
+}
+
+:global {
+  .container-tutoring-session-cal-modal {
+    .ant-modal-confirm-content {
+      margin-left: 8px !important;
+    }
+
+    .ant-modal-confirm-btns {
+      [disabled] {
+        display: none;
+      }
+    }
+
+    .calendar-event-title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .wrapper-tutoring-session-calendar-event-detail {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      padding-top: 0.5em;
+    }
+
+    .event-detail-row {
+      display: flex;
+      padding: 0.2em 0;
+    }
+
+    .event-detail-label {
+      flex: 0 0 40%;
+      text-align: right;
+      font-weight: 600;
+    }
+
+    .event-detail-value {
+      flex: 1 1 60%;
+      padding-left: 1em;
+    }
+  }
+}

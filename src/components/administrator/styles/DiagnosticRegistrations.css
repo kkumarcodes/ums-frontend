@@ -1,0 +1,28 @@
+.diagnosticRegistrationsFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.diagnosticRegistrationsFilter :global .ant-input {
+  width: 300px;
+}
+
+.diagnosticRegistrationsFilter :global label {
+  margin-right: 6px;
+  font-size: 0.75em;
+}
+
+.diagnosticRegistrationsPage :global .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=DiagnosticRegistrations.css.map */

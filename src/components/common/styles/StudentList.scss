@@ -1,0 +1,67 @@
+.studentList {
+  margin-top: 16px;
+  padding: 12px 0px 12px 24px;
+  :global {
+    .student-list-table-container {
+      font-size: 18px;
+    }
+    .student-list-header,
+    .student-list-row-inner {
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        flex: 0 0 32%;
+      }
+    }
+    .student-list-toolbar {
+      display: flex;
+      justify-content: space-between;
+    }
+    .student-list-header {
+      text-transform: uppercase;
+      background: #f9f9f9;
+      margin: 0px -36px;
+      padding: 4px 36px;
+      & > div:hover {
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+    .student-list-row-inner {
+      margin: 0px -36px;
+      padding: 7px 36px;
+      cursor: pointer;
+      &:hover {
+        background: #f9f9f9;
+      }
+      .student-row-name {
+        .anticon {
+          font-size: 0.75em;
+          color: black;
+          margin-right: 5px;
+        }
+      }
+    }
+    .student-list-row-outer.expanded .student-list-row-inner {
+      background: #f9f9f9;
+    }
+    .student-row-expanded {
+      background: #f9f9f9;
+      margin: 0px -36px;
+      padding: 4px 36px;
+      .student-row-expanded-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        margin: 24px 0px;
+      }
+    }
+  }
+}
+
+.resourceSelection {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 12px 36px;
+}

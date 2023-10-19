@@ -1,0 +1,68 @@
+$margin: 10px;
+.CounselorNotesAndFilesPage {
+  :global {
+    .files-resources-container {
+      flex: 1 1 48.5%;
+      margin-bottom: 5 * 20px;
+      border-right: solid 2px #ddd;
+      padding-right: 1%;
+    }
+    .notes-container {
+      flex: 1 1 48.5%;
+      padding-left: 1%;
+      .wisernet-section-title {
+        margin-bottom: $margin;
+        .cpp-notes-alert {
+          flex: 1 1 75%;
+          text-align: right;
+          padding-right: 4 * 20px;
+        }
+      }
+    }
+    .counselor-meeting-container {
+      margin-bottom: $margin;
+    }
+    .note-title {
+      position: relative;
+      user-select: none;
+      color: white;
+      margin-bottom: $margin;
+      background-color: #293a68;
+      text-align: center;
+      padding: 4px 0;
+      font-weight: bold;
+      &:hover {
+        cursor: pointer;
+        color: #06cfc3;
+        button > span {
+          color: #06cfc3;
+        }
+      }
+    }
+    .non-meeting-note-title {
+      color: #04acec;
+    }
+    .hide {
+      display: none;
+    }
+    .collapse-note-content-icon {
+      position: absolute;
+      top: 0;
+      right: 16px;
+      color: white;
+      &:focus {
+        color: white;
+      }
+    }
+    .new-note-container {
+      display: flex;
+      justify-content: center;
+    }
+    .new-note-btn {
+      font-weight: bold;
+    }
+    .wisernet-section {
+      margin-bottom: 5 * 20px;
+    }
+  }
+}

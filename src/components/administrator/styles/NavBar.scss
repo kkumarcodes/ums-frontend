@@ -1,0 +1,81 @@
+
+.navBarMain {
+  display: flex;
+  margin: 10px 0;
+
+
+.navButton {
+  height: 50px;
+  margin-right: 20px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.4s ease;
+  color: #293a68;
+  font-weight: 600;
+  box-shadow: none;
+  border-radius: 0;
+  letter-spacing: 1px;
+
+  @media (max-width: 1000px) {
+    margin-right: 10px;
+    padding: 5px;
+  }
+
+  &:hover {
+    border-color: #293a68;
+  }
+
+  &:active {
+    border-color: #293a68;
+  }
+
+  &:focus {
+    border-color: #293a68;
+  }
+}
+
+.activeNavBarItem {
+  border-color: #293a68;
+}
+
+ :global {
+   [ant-click-animating-without-extra-node]:after {
+     -webkit-animation: none !important;
+     -moz-animation: none !important;
+     -o-animation: none !important;
+     -ms-animation: none !important;
+     animation: none !important;
+   }
+ }
+}
+
+:global {
+  @media (max-width: 1000px) {
+    .logo {
+      width: 130px;
+    }
+  }
+}
+
+.navMenu {
+  top: 2px;
+
+  :global {
+    .active {
+      color: #04acec;
+      font-weight: 600;
+    }
+
+    .ant-dropdown-menu-item-active {
+      background-color: rgba(24, 144, 255, 0.05);
+    }
+
+    a {
+      color: #04acec;
+
+      &:hover {
+        color: darken(#04acec, 30%);
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.CounselingStudentParentTaskList {
+  color: black;
+  :global {
+    .task .row-content,
+    .subheader {
+      display: flex;
+      .title {
+        flex: 1 1 50%;
+      }
+      .meeting {
+        flex: 0 0 25%;
+        padding: 0 20px;
+      }
+      .due {
+        flex: 0 0 15%;
+      }
+      .complete {
+        text-align: right;
+        flex: 0 0 22%;
+      }
+    }
+    .complete .counselor-actions-container {
+      display: inline;
+      margin-left: 2 * 20px;
+    }
+    .subheader {
+      font-weight: bold;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: solid #ddd 3px;
+      font-size: 16px;
+    }
+    .wisernet-toolbar {
+      .refresh-tasks-btn {
+        position: absolute;
+        left: 0;
+        margin-left: 0;
+      }
+      .sync-essay-tasks,
+      .complete-switch {
+        margin-right: 20px * 2;
+      }
+      .meeting-filter-alert {
+        background: #293a68;
+        color: white;
+        padding: 20px 2 * 20px;
+        display: flex;
+        align-items: center;
+
+        .ant-btn {
+          color: white;
+          border: solid 2px white;
+          margin-left: 20px;
+        }
+      }
+      .filter {
+        position: relative;
+        flex: 1 1 50%;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+      }
+      .search-input {
+        width: 155px;
+        margin-left: auto;
+      }
+      .counseling-add-task {
+        display: inline-block;
+        margin-left: 20px/2;
+      }
+    }
+    .task-list-rows {
+      font-size: 16px;
+      .ant-btn {
+        font-size: 16px;
+      }
+    }
+    .task {
+      margin: 20px 0;
+      padding: 20px 0;
+      border-bottom: #ddd solid 1px;
+      width: 100%;
+      .row-content,
+      .row-schools {
+        width: 100%;
+      }
+      cursor: pointer;
+      &:hover {
+        color: #293a68;
+      }
+      .title {
+        .anticon {
+          margin-right: 20px;
+        }
+      }
+      &.completed {
+        .title {
+          text-decoration: line-through;
+        }
+      }
+      .complete {
+        text-align: right;
+      }
+      .completed-icon {
+        font-size: 20px;
+      }
+      .completed-btn {
+        padding: 0;
+        border: none;
+      }
+      .complete-box {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: solid 2px #293a68;
+        transition: transform 0.17s ease;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.11) rotate(90deg);
+        }
+      }
+    }
+  }
+}

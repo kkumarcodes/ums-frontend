@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,oBAFgB,CAClB,OAAO,CACL,WAAW,CAAC;EACV,KAAK,EAAE,GAAG;CACX",
+    "sources": [
+        "SelfAssignDiagnosticModal.scss"
+    ],
+    "names": [],
+    "file": "SelfAssignDiagnosticModal.css"
+}

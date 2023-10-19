@@ -1,0 +1,14 @@
+@import 'style/administrator/variables';
+
+.error {
+  text-align: center;
+  color: #f5222d;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+:global {
+  .switchTutoring {
+    margin-right: 50px !important;
+  }
+}

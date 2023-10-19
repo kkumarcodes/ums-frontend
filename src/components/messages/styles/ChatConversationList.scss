@@ -1,0 +1,38 @@
+.chatConversationList {
+  width: 205px;
+  border-right: solid 1px #293a68;
+  height: 100%;
+  position: relative;
+  padding-top: 12%;
+  :global {
+    .chat-conversation-inner-list {
+      height: 92%;
+      top: 8%;
+      max-height: 95%;
+      overflow-y: scroll;
+    }
+    .list-search {
+      height: 37px;
+      width: 100%;
+      padding: 0px 8px;
+    }
+    .conversation-item {
+      border-bottom: solid #ccc 1px;
+      text-align: right;
+      padding: 8px;
+      p {
+        margin: 0;
+      }
+      .conversation-subtitle {
+        font-size: 0.5em;
+      }
+
+      cursor: pointer;
+      &.active,
+      &:hover {
+        background: #293a68;
+        color: white;
+      }
+    }
+  }
+}

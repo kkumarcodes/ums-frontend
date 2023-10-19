@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB;AACvB,eAAe;AACf,WAAW,CAAC;EACV,KAAK,EAAE,GAAG;CACX;;AAED,AAAA,6BAA6B;AAC7B,WAAW;AACX,iBAAiB,CAAC;EAChB,KAAK,EAAE,GAAG;CACX",
+    "sources": [
+        "GroupTutoringSession.scss"
+    ],
+    "names": [],
+    "file": "GroupTutoringSession.css"
+}

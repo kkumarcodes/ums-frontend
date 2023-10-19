@@ -1,0 +1,233 @@
+.ApplicationTrackerTable {
+  display: flex;
+  padding-bottom: 3 * 20px;
+  padding-right: 2 * 20px;
+  -webkit-transform: translate3d(0, 0, 0); // Fix for chrome-90-windows no-paint bug
+  :global {
+    .icons-container {
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 15px;
+        margin: 0px 2.5px;
+      }
+    }
+    .active-label {
+      color: #04acec;
+    }
+    .active-arrow {
+      color: white;
+    }
+    .table-fixed-column {
+      .header-fixed-column,
+      .content-fixed-column {
+        min-width: 340px;
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        border: none;
+      }
+      .header-fixed-column {
+        height: 42px;
+        justify-content: space-between;
+        background-color: #293a68;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        .collapse-expand-icon {
+          padding: 0 30px;
+          color: white;
+          height: 100%;
+          transition: color 0.3s ease;
+          &:hover {
+            color: #04acec;
+          }
+        }
+        .header-student-name {
+          color: white;
+          font-family: 'Rokkitt', serif;
+          transition: color 0.3s ease;
+          width: 100%;
+          &:hover {
+            color: #04acec;
+          }
+        }
+        .sort-icons {
+          display: flex;
+          flex-direction: column;
+          font-size: 12px;
+          color: rgb(191, 191, 191);
+        }
+        .asc-icon {
+          position: relative;
+          top: 2px;
+        }
+        .desc-icon {
+          position: relative;
+          bottom: 2px;
+        }
+      }
+      .content-fixed-column {
+        justify-content: flex-end;
+        min-height: 60px;
+        padding-right: 16px;
+      }
+    }
+
+    .table-scrollable-columns {
+      display: flex;
+      flex-direction: column;
+      overflow-x: auto;
+
+      .scrollable-header-row {
+        display: flex;
+        height: 42px;
+        font-family: 'Rokkitt', serif;
+      }
+      &.h-fixed {
+        max-height: 73vh;
+        margin-bottom: -100px; // To cancel out margins on container elements that cause annoying double-scroll
+        position: relative;
+      }
+      .header-item,
+      .content-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 180px;
+        &.URM,
+        &.FGC,
+        &.Twin,
+        &.Legacy,
+        &.HonorsCollege,
+        &.AdditionalRequirementDeadline {
+          width: 100px;
+        }
+      }
+      .content-checkbox-item {
+        width: 100px;
+      }
+      .header-item {
+        background-color: #293a68;
+        color: white;
+        font-weight: bold;
+        border: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .content-item {
+        border-bottom: solid 1px #ddd;
+      }
+      .header-item.ApplicationStatus,
+      .content-item.app-status,
+      .header-item.University,
+      .content-item.university,
+      .content-item.deadline,
+      .header-item.Deadline {
+        width: 240px;
+        padding: 0 8px;
+        text-align: center;
+      }
+      .header-item.ShortAnswerStatus,
+      .content-item.short-answer-status {
+        width: 240px;
+      }
+      .header-item.Major,
+      .content-item.major {
+        width: 260px;
+        .ant-select {
+          width: 100%;
+        }
+      }
+      .header-item.StandardizedTesting,
+      .content-item.std-testing {
+        width: 275px;
+      }
+      .header-item.Scholarship,
+      .content-item.scholarship {
+        width: 180px;
+      }
+      .header-item.AcceptanceStatus,
+      .content-item.acceptance-status {
+        width: 280px;
+        .ant-select {
+          width: 100%;
+        }
+      }
+
+      .header-label {
+        margin-right: 8px;
+        transition: color 0.3s ease;
+        &:hover {
+          color: #04acec;
+        }
+      }
+      .sort-icons {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        color: rgb(191, 191, 191);
+      }
+      .asc-icon {
+        position: relative;
+        top: 2px;
+      }
+      .desc-icon {
+        position: relative;
+        bottom: 2px;
+      }
+      .scrollable-content-row {
+        display: flex;
+        height: 60px;
+      }
+      .content-item.deadline {
+        display: flex;
+        flex-direction: column;
+        line-height: 18px;
+        .deadline-type {
+          color: #808080;
+        }
+      }
+      .tracker-select {
+        width: 150px;
+      }
+      .content-item-flex-column {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      .content-item.major,
+      .content-item.std-testing {
+        .ant-input-group-addon {
+          padding: 0;
+          border: none;
+        }
+        .btn-save-major {
+          color: #04acec;
+          &:disabled {
+            color: gray !important;
+          }
+        }
+      }
+      .content-item.std-testing {
+        padding-left: 15px;
+      }
+      .note-container {
+        max-height: 80px;
+        overflow-y: scroll;
+        margin: 10px 0 0;
+        color: #808080;
+      }
+      .content-item.submitted {
+        display: flex;
+        align-items: center;
+        .ant-row.ant-form-item {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

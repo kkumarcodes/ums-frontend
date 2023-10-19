@@ -1,0 +1,29 @@
+.counselorMeetingInfoModal {
+  :global {
+    .header {
+      color: #293a68;
+      padding: 20px;
+      margin-top: 20px * 3;
+      text-align: center;
+    }
+    .zoom-tag .ant-tag {
+      cursor: pointer;
+    }
+    .agenda-items {
+      li {
+        margin-top: 20px;
+      }
+    }
+    li.task {
+      margin-top: 20px;
+    }
+    .agenda-items,
+    .tasks,
+    .counselor-notes {
+      margin-top: 20px * 3;
+      h3 {
+        border-bottom: solid 1px #293a68;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.counselorTimeEntryModal {
+  :global {
+    .time-warning {
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  }
+}
+.counselorTimeEntryToolbar {
+  margin-bottom: 16px;
+  & > div {
+    width: 100%;
+  }
+  :global {
+    .tb-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    label {
+      font-size: 16px;
+      margin-right: 4px;
+    }
+
+    .tb-container,
+    .ant-btn {
+      margin: 0px 8px;
+      &:last-of-type {
+        margin-right: 0px;
+      }
+    }
+    .ant-select {
+      width: 200px;
+      position: relative;
+    }
+    .tb-outer-container {
+      width: 100%;
+      margin-bottom: 20px * 2;
+    }
+  }
+}
+.counselorTimeEntryTable {
+  :global {
+    .summary-container {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .ant-statistic {
+      margin: 8px;
+      padding: 8px;
+      border: solid 1px #ddd;
+    }
+    .hours.added {
+      background: #06cfc3;
+      padding: 4px 12px;
+      color: white;
+    }
+  }
+}

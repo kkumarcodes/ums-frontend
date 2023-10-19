@@ -1,0 +1,23 @@
+.minimizedModalContainer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  z-index: 14;
+  display: flex;
+  justify-content: flex-end;
+  :global {
+    .minimized-modal-tab {
+      background: #293a68;
+      margin: 0 20px * 2;
+      color: white;
+      padding: 20px 4 * 20px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      cursor: pointer;
+      .anticon {
+        margin-left: 20px;
+      }
+    }
+  }
+}

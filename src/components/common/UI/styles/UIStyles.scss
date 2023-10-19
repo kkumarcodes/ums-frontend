@@ -1,0 +1,35 @@
+.wisernetSection {
+  :global {
+    .wisernet-section-content {
+      padding: 20px 30px;
+      // TODO: Refactor fonts more generally so this is not necessary
+      font: normal normal normal 14px/19px Open Sans;
+      font-family: 'Open Sans', sans-serif;
+      &.no-padding {
+        padding: 0;
+      }
+    }
+  }
+}
+.wisernetSectionHighContrast {
+  :global {
+    .wisernet-section-content {
+      background-color: #293a68;
+      color: white;
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: white;
+      }
+    }
+  }
+}
+.wisernetSectionLowContrast {
+  :global {
+    .wisernet-section-content {
+      background-color: #e7e7e7;
+    }
+  }
+}

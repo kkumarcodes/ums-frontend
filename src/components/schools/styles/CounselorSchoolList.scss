@@ -1,0 +1,14 @@
+.counselorSchoolList {
+  :global {
+    .notes-files-summary-container {
+      margin-top: 24px;
+    }
+    .school-search {
+      padding: 16px 0;
+      .ant-select {
+        margin-left: 12px;
+        width: 300px;
+      }
+    }
+  }
+}

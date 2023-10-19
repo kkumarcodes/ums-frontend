@@ -1,0 +1,12 @@
+.inputGroupSessionTitle,
+.selectLocation,
+.selectDate {
+  width: 35%;
+}
+
+.inputGroupSessionDescription,
+.selectZoom,
+.startAndDuration {
+  width: 60%;
+}
+/*# sourceMappingURL=GroupTutoringSession.css.map */

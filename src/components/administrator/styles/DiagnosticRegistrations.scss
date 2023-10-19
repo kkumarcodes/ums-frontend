@@ -1,0 +1,22 @@
+.diagnosticRegistrationsFilter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  :global {
+    .ant-input {
+      width: 300px;
+    }
+    label {
+      margin-right: 6px;
+      font-size: 0.75em;
+    }
+  }
+}
+.diagnosticRegistrationsPage {
+  :global {
+    .title {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

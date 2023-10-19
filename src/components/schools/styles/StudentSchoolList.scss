@@ -1,0 +1,123 @@
+.studentSchoolList {
+  :global {
+    .note-search {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 2 * 20px;
+      .note {
+        flex: 1 1 80%;
+        padding-right: 3 * 20px;
+        label {
+          font-weight: bold;
+        }
+      }
+      .search-container {
+        flex: 0 0 400px;
+        text-align: right;
+        .ant-select {
+          width: 400px;
+        }
+      }
+    }
+
+    .toolbar {
+      margin-bottom: 24px;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      align-items: center;
+      .finalize-add {
+        width: 100%;
+        text-align: right;
+        margin-top: 20px;
+      }
+      .expanded-condensed,
+      .sort-by,
+      .legend {
+        display: inline-block;
+        margin-left: 20px * 2;
+        & > label {
+          margin-right: 4px;
+          height: 100%;
+        }
+      }
+      .ant-btn {
+        margin-left: 20px * 2;
+      }
+      .legend {
+        margin-right: 20px * 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        span {
+          font-size: 14px;
+          padding: 2px 20px;
+          display: inline-block;
+          margin: 0px 6px;
+          color: white;
+        }
+        .likely {
+          background: #06cfc3;
+        }
+        .target {
+          background: #04acec;
+        }
+        .target-reach {
+          background: #ff8d47;
+        }
+        .reach {
+          background: #ff6271;
+        }
+      }
+    }
+    .empty-state {
+      text-align: center;
+    }
+    .finalized-school-list-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      flex-wrap: wrap;
+      justify-content: left;
+      & > div {
+        margin: 24px;
+      }
+    }
+    .school-list-col-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      .school-list-col {
+        flex: 1 1 31%;
+
+        padding: 0 1.5%;
+
+        border-left: solid 1px #ccc;
+
+        &:first-of-type {
+          border-left: none;
+          padding-left: 0;
+        }
+        &:last-of-type {
+          padding-right: 0;
+        }
+        .col-title {
+          border-bottom: solid 2px #293a68;
+          padding-bottom: 20px;
+        }
+        .school-list-col-inner {
+          max-height: 75vh;
+          padding-bottom: 5vh;
+          overflow-y: scroll;
+          position: relative;
+          &.no-scroll {
+            overflow-y: hidden;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.notificationListContainer {
+  font-size: 16px;
+}
+
+.notificationListContainer :global .notification-header {
+  margin-bottom: 0px;
+}
+
+.notificationListContainer :global .notification-list {
+  padding-left: 0px;
+  list-style: none;
+}
+
+.notificationListContainer :global .list-header-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  border-bottom: 1px solid grey;
+}
+
+.notificationListContainer :global .list-item-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid grey;
+}
+
+.notificationListContainer :global .list-item-row:last-of-type {
+  border-bottom: none;
+}
+
+.notificationListContainer :global .header-type {
+  font-weight: 600;
+}
+
+.notificationListContainer :global .header-type,
+.notificationListContainer :global .notification-type {
+  width: 400px;
+  padding: 24px;
+}
+
+.notificationListContainer :global .header-item,
+.notificationListContainer :global .notification-checkbox {
+  width: 150px;
+  padding: 24px 0;
+}
+/*# sourceMappingURL=NotificationList.css.map */

@@ -1,0 +1,58 @@
+.containerTutorAvailabilityScheduler {
+  :global {
+    .subHeader {
+      color: #2e2e2e;
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 24px;
+    }
+
+    .buttonWrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 20px 40px 0;
+    }
+    .timezoneWarning {
+      padding-left: 20px;
+      .anticon {
+        margin-right: 6px;
+      }
+    }
+    .one-hour-block,
+    .top-block,
+    .bottom-block {
+      display: flex;
+      font-weight: bold;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 2 * 20px;
+    }
+    .invalid-submission {
+      color: 'red';
+      font-weight: 600;
+      margin-top: 10;
+      padding-left: 8 * 20px;
+    }
+    .in-person-icon {
+      transition: 0.3s all ease;
+      &:active,
+      &:focus {
+        color: unset;
+      }
+      &:hover {
+        color: white;
+        transform: scale(1.3);
+      }
+    }
+    .buttonSubmit {
+      margin-left: 10px;
+
+      span {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}

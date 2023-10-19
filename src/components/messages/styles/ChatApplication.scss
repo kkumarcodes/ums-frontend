@@ -1,0 +1,13 @@
+.chatApplication {
+  display: flex;
+  padding: 24px;
+  // border: solid #293a68 1px;
+  height: 75vh;
+  :global {
+    .conversation-container {
+      flex: 1 1 80%;
+      height: 100%;
+      width: 20%;
+    }
+  }
+}

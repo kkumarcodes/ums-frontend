@@ -1,0 +1,23 @@
+.minimizeModalTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  :global {
+    h3 {
+      margin: 0;
+    }
+    .ant-btn {
+      margin-left: 2 * 20px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      flex: 72px 0 0;
+      height: 100%;
+    }
+  }
+}

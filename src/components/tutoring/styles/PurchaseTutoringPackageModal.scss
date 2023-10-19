@@ -1,0 +1,65 @@
+
+.purchaseTutoringPackageModal {
+  :global {
+    .select-type {
+      text-align: center;
+    }
+    .instructions {
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+    .footer {
+      text-align: left;
+    }
+  }
+}
+.purchaseIndividualTutoringPackage {
+  :global {
+    .header {
+      width: 260px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      background: #293a68;
+      margin: 20px 0px;
+    }
+    .package-option {
+      padding: 20px 0px;
+      margin: 20px 0px;
+      border-bottom: solid 2px #ddd;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      .hours {
+        .ant-btn:first-of-type {
+          margin-right: 20px;
+        }
+        .ant-btn:last-of-type {
+          margin-left: 20px;
+        }
+      }
+    }
+    .select-tutor {
+      text-align: center;
+      .ant-select {
+        width: 260px;
+        margin-left: 20px;
+      }
+    }
+    .curriculum-container {
+      margin-top: 2 * 20px;
+    }
+    .confirmation {
+      text-align: center;
+      .back {
+        margin-top: 2 * 20px;
+        padding-top: 2 * 20px;
+        border-top: solid 2px #ddd;
+      }
+    }
+  }
+}
+.purchaseGroupPackage {
+  :global {
+  }
+}

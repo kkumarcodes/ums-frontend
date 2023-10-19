@@ -1,0 +1,147 @@
+.roadmap {
+  height: 68vh;
+  :global {
+    .scroll-container {
+      max-width: 100%;
+      overflow-x: scroll;
+      max-height: 80vh;
+      overflow-y: scroll;
+    }
+    .content-container {
+      height: 100%;
+      position: relative;
+    }
+    .roadmap-columns {
+      display: flex;
+      justify-content: flex-start;
+      height: 100%;
+      width: 100%;
+    }
+    .roadmap-rows {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      left: 0;
+    }
+    .wisernet-toolbar {
+      justify-content: space-between;
+    }
+  }
+}
+$darkness-modifier: 3.7%;
+.roadmapGradeColumn {
+  flex-grow: 1;
+  flex-basis: 1px; // Just need the same basis for all columns
+  :global {
+    .columns-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+    .grade-title {
+      font-size: 32px;
+      padding: 20px 0px;
+      color: white;
+      border-right: solid 1px white;
+      &.idx-0 {
+        background: #04acec;
+      }
+      &.idx-1 {
+        background: darken(#04acec, $darkness-modifier);
+      }
+      &.idx-2 {
+        background: darken(#04acec, $darkness-modifier * 2);
+      }
+      &.idx-3 {
+        background: darken(#04acec, $darkness-modifier * 3);
+      }
+      &.idx-4 {
+        background: darken(#04acec, $darkness-modifier * 4);
+      }
+      &.idx-5 {
+        background: darken(#04acec, $darkness-modifier * 5);
+      }
+    }
+    .semester {
+      flex-grow: 1;
+      flex-basis: 10px;
+      height: 100%;
+      border-right: solid 1px #808080;
+      background: rgba(4, 172, 236, 0.05);
+      .semester-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        padding: 20px 0;
+        &.idx-0 {
+          color: #04acec;
+        }
+        &.idx-1 {
+          color: darken(#04acec, $darkness-modifier);
+        }
+        &.idx-2 {
+          color: darken(#04acec, $darkness-modifier * 2);
+        }
+        &.idx-3 {
+          color: darken(#04acec, $darkness-modifier * 3);
+        }
+        &.idx-4 {
+          color: darken(#04acec, $darkness-modifier * 4);
+        }
+        &.idx-5 {
+          color: darken(#04acec, $darkness-modifier * 5);
+        }
+      }
+    }
+  }
+}
+
+$row-height: 180px;
+.roadmapMeetingsRow {
+  position: relative;
+  width: 100%;
+  left: 0;
+  margin: 20px * 3 0;
+  padding: 20px 0;
+  height: $row-height;
+
+  :global {
+    .meeting {
+      position: absolute;
+      top: 0;
+      width: 290px;
+      height: $row-height;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      border: solid 2px #c4c4c4;
+      padding: 20px;
+      margin: 0 10px;
+      .f-content {
+        color: black;
+      }
+      &.past {
+        p,
+        button {
+          opacity: 0.45;
+        }
+      }
+      .ant-btn {
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+
+      p {
+        margin: 0;
+        margin-bottom: 20px / 4;
+      }
+      .help {
+        font-size: 11px;
+      }
+    }
+  }
+}

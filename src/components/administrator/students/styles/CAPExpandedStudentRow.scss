@@ -1,0 +1,22 @@
+.CAPExpandedStudentRow {
+  width: 82vw;
+  :global {
+    .ant-tabs-tab {
+      color: #293a68;
+    }
+    .ant-tabs-content {
+      padding-top: 2 * 20px;
+    }
+    .activities-icon svg {
+      width: 20px;
+      height: 20px;
+      position: relative;
+    }
+    .tasks-and-meetings {
+      width: 100%;
+      & > div {
+        flex: 0 0 49%;
+      }
+    }
+  }
+}

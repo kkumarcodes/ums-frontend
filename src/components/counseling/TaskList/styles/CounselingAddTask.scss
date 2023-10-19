@@ -1,0 +1,64 @@
+.counselingAddTask {
+  :global {
+    .popover-btn {
+      box-shadow: 3px 3px 4px 0px rgba(130, 128, 130, 0.5);
+    }
+  }
+}
+.popoverContent {
+  padding: 20px;
+  border-bottom: solid 8px #293a68;
+  width: 560px;
+  :global {
+    .header {
+      margin-bottom: 20px/2;
+      padding-bottom: 20px/2;
+    }
+    .filter {
+      flex: 1 1 75%;
+      padding-right: 20px * 2;
+    }
+    .apply-roadmap {
+      margin-right: 20px;
+    }
+    .banner {
+      background: #777;
+      padding: 20px 24px;
+      margin: 0px -25px;
+      color: white;
+      font-weight: bold;
+    }
+    .tasks-list-container {
+      max-height: 400px;
+      overflow-y: scroll;
+      .task {
+        margin: 20px/2 0px;
+        padding: 20px/2;
+        border-bottom: solid 1px #ccc;
+        justify-content: space-between;
+        position: relative;
+        padding-left: 20px * 2;
+        cursor: pointer;
+        .repeatable {
+          margin-right: 20px;
+          position: absolute;
+          left: 0;
+          top: 20px;
+          .anticon {
+            font-size: 10px;
+          }
+        }
+        &:hover {
+          background: #293a68;
+          color: white;
+        }
+        &:last-of-type {
+          border-bottom-width: 0;
+        }
+        .meeting-add {
+          display: flex;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.operationsCalendar {
+  :global {
+    .rbc-event {
+      font-size: 0.78em;
+    }
+    .rbc-ops-event-individual {
+      background: #293a68;
+    }
+    .rbc-ops-event-group {
+      background: #04acec;
+    }
+    .rbc-ops-prospective-event {
+      background: lightgreen;
+      border: solid 4px #293a68;
+      color: #293a68;
+      box-shadow: 0px 0px 10px 1px #293a68;
+    }
+    .rbc-ops-availability {
+      background: #ddd;
+      color: #293a68;
+      // z-index: 1;
+    }
+    .tentative {
+      background: #ffe2d1;
+      color: #293a68;
+    }
+    .rbc-event.rbc-selected {
+      background-color: #ff6e1a;
+    }
+    .timezone-warning {
+      font-weight: bold;
+      font-size: 0.75em;
+      margin: 12px 0px;
+    }
+  }
+}
+.operationsCalendarFilter {
+  justify-content: center;
+  border: solid #293a68 1px;
+  margin: 10px 0px;
+  padding: 12px;
+  :global {
+    .label {
+      flex: 0 0 90px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .filter-container {
+      flex: 1 1 10%;
+    }
+    .ant-row {
+      margin: 0;
+    }
+    .ant-form-item-control {
+      width: 80%;
+    }
+    .tutor-availability {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px #293a68 solid;
+    }
+  }
+}
+
+:global {
+  .container-operations-cal-modal {
+    .ant-modal-confirm-content {
+      margin-left: 8px !important;
+    }
+  }
+
+  .wrapper-operations-calendar-event-detail {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      padding-top: 0.5em;
+    }
+
+    .event-detail-row {
+      display: flex;
+      padding: 0.2em 0;
+    }
+
+    .event-detail-label {
+      flex: 0 0 20%;
+      text-align: right;
+      font-weight: 600;
+    }
+
+    .event-detail-value {
+      flex: 1 1 80%;
+      padding-left: 1em;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.studentList {
+  margin-top: 40px;
+  padding: 12px 36px;
+}
+
+.studentList :global .student-list-header,
+.studentList :global .student-list-row-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.studentList :global .student-list-header > div,
+.studentList :global .student-list-row-inner > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+}
+
+.studentList :global .student-list-header {
+  text-transform: uppercase;
+  background: #f9f9f9;
+  margin: 0px -36px;
+  padding: 4px 36px;
+}
+
+.studentList :global .student-list-header > div:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.studentList :global .student-list-row-inner {
+  margin: 0px -36px;
+  padding: 7px 36px;
+  cursor: pointer;
+}
+
+.studentList :global .student-list-row-inner:hover {
+  background: #f9f9f9;
+}
+
+.studentList :global .student-list-row-inner .student-row-name .anticon {
+  font-size: 0.75em;
+  color: black;
+  margin-right: 5px;
+}
+
+.studentList :global .student-list-row-outer.expanded .student-list-row-inner {
+  background: #f9f9f9;
+}
+
+.studentList :global .student-row-expanded {
+  background: #f9f9f9;
+  margin: 0px -36px;
+  padding: 4px 36px;
+}
+
+.studentList :global .student-row-expanded .student-row-expanded-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 12px;
+  margin: 24px 0px;
+}
+
+.resourceSelection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 12px 36px;
+}
+/*# sourceMappingURL=StudentList.css.map */

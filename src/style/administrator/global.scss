@@ -1,0 +1,173 @@
+// Global Admin App style configuration
+// These styles will overwrite AntD styles and Common Globals
+@import './variables';
+
+:global {
+  // FIXME: Try to unify with global global
+  // # MAIN LAYOUT SETTINGS
+  .app-inner-container {
+    height: 100%;
+
+    .app-sidebar {
+      align-items: stretch;
+      min-height: calc(100vh - 60px);
+      height: unset;
+
+      a:focus {
+        text-decoration: underline;
+      }
+    }
+
+    .app-content-outer {
+      min-height: calc(100vh - 63px); //  63px needed to adjust for common/global mt=3px
+      overflow-y: unset;
+      height: 100%; //  Needed to overwrite common/global.scss
+      margin: 24px 2%;
+      padding: 0;
+    }
+  }
+
+  // TODO: Refactor to use module css
+  // # ANT TABLE COMPONENT
+  .ant-table-body {
+    border: 1px solid #f0f0f0;
+  }
+
+  .ant-table-thead {
+    background-color: #f0f0f0 !important;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .ant-table-tbody {
+    background-color: #fdfdfd !important;
+  }
+
+  .ant-table-column-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+  .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+  .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+  .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+    background: rgba(24, 144, 255, 0.05);
+  }
+
+  // TODO: Refactor to use module css
+  // # CREATE/EDIT MODALS
+  .resourceModal,
+  .sessionModal {
+    .switchAccess {
+      display: none;
+    }
+
+    .ant-select {
+      width: 100%;
+    }
+
+    .uploadLabel {
+      display: block;
+      height: 40px;
+    }
+
+    .uploadFile {
+      margin-bottom: 24px;
+      display: block;
+    }
+
+    .error {
+      color: #f5222d;
+      font-weight: bold;
+    }
+
+    .formButtons {
+      .ant-form-item-control-input-content {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .cancelButton {
+      margin-right: 10px;
+    }
+  }
+
+  // TODO: Refactor to use module css
+  // # PAGE COMPONENTS
+  .pageContainer {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .actionsContainer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-grow: 1;
+      margin-bottom: 18px;
+
+      .ant-btn {
+        margin-left: 24px;
+      }
+    }
+
+    .searchWrapper,
+    .filterWrapper {
+      margin-bottom: 16px;
+      margin-right: 24px;
+    }
+
+    .filterLabel {
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+
+  // TODO: Refactor to use module css
+  // # EXPANDED ROW COMPONENTS
+  .expandedRowWrapper {
+    max-width: 92vw;
+    .ant-tabs-tab {
+      margin: 0 0 0 32px;
+    }
+
+    .ant-tabs-bar {
+      margin: 0 0 10px 0;
+    }
+
+    .buttonCreateTask {
+      margin-bottom: 20px;
+    }
+
+    .ant-table {
+      // margin-top: 20px 0 3;
+      border: 1px solid lighten(#f0f0f0, 1%);
+    }
+
+    .ant-table thead > tr > th {
+      background: lighten(#f0f0f0, 1%);
+    }
+
+    .ant-table thead th.ant-table-column-has-sorters:hover {
+      background: darken(#f0f0f0, 5%);
+    }
+
+    .ant-table thead th.ant-table-column-sort {
+      background: darken(#f0f0f0, 3%);
+    }
+
+    .ant-tabs-content {
+      padding: 20px 30px;
+      border-left: 2px solid lighten(#04acec, 30%);
+    }
+  }
+
+  .courseTable {
+    .ant-table-expanded-row {
+      border-left: 2px solid lighten(#04acec, 30%);
+    }
+  }
+}

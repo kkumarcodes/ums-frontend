@@ -1,0 +1,19 @@
+.report {
+  :global {
+    .toolbar {
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      label {
+        font-size: 0.8em;
+        margin-right: 4px;
+      }
+      .search {
+        width: 500px;
+        .ant-input {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

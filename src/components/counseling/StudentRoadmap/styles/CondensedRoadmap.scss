@@ -1,0 +1,37 @@
+.condensedRoadmap {
+  :global {
+    h4.f-subtitle-1 {
+      margin-bottom: 0;
+      margin-top: 2 * 20px;
+      margin-bottom: 20px;
+    }
+    .show-more {
+      .ant-btn {
+        color: white;
+      }
+    }
+    .completed-container .show-more {
+      margin-top: -1 * 20px;
+      margin-bottom: 20px;
+    }
+    .meeting {
+      display: flex;
+      margin-bottom: 20px * 2;
+      cursor: pointer;
+      &.hide-cursor-pointer {
+        cursor: unset;
+      }
+      .icon-container {
+        flex: 0 0 40px;
+        .anticon {
+          color: #06cfc3;
+          position: relative;
+          top: -2px;
+        }
+      }
+      p {
+        margin-bottom: 20px/2;
+      }
+    }
+  }
+}

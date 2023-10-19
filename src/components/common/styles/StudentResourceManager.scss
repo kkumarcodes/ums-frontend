@@ -1,0 +1,32 @@
+.studentResourceManager {
+  :global {
+    .resources-toolbar {
+      .toolbar-group {
+        width: 100%;
+        margin-bottom: 12px;
+        &.flex {
+          justify-content: space-between;
+        }
+        &.multi-select {
+          text-align: right;
+        }
+        .select-form {
+          width: 100%;
+          text-align: left;
+          border-top: solid 1px #ddd;
+          padding-top: 6px;
+          margin-top: 2px;
+          .flex {
+            justify-content: space-between;
+          }
+          .flex-select-container {
+            flex: 1 1 calc(100% - 120px);
+            .ant-select {
+              width: 97%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

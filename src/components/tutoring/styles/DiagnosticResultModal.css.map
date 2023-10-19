@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,sBAFkB,CACpB,OAAO,CACL,wBAAwB,CAAC,gBAAgB,CAAC;EACxC,MAAM,EAAE,OAAO;EACf,OAAO,EAAE,IAAI;CAOd;;AAXL,AAKM,sBALgB,CACpB,OAAO,CACL,wBAAwB,CAAC,gBAAgB,CAGvC,KAAK,CAAC;EACJ,IAAI,EAAE,SAAS;CAChB;;AAPP,AAQM,sBARgB,CACpB,OAAO,CACL,wBAAwB,CAAC,gBAAgB,CAMvC,WAAW,CAAC;EACV,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "DiagnosticResultModal.scss"
+    ],
+    "names": [],
+    "file": "DiagnosticResultModal.css"
+}

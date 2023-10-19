@@ -1,0 +1,23 @@
+.report :global .toolbar {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.report :global .toolbar label {
+  font-size: 0.8em;
+  margin-right: 4px;
+}
+
+.report :global .toolbar .search {
+  width: 500px;
+}
+
+.report :global .toolbar .search .ant-input {
+  width: 300px;
+}
+/*# sourceMappingURL=Report.css.map */

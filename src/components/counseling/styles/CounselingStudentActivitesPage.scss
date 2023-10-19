@@ -1,0 +1,52 @@
+.counselingStudentActivitiesPage {
+  font-size: 16px;
+  :global {
+    .instructions {
+      a {
+        text-decoration: underline;
+      }
+    }
+    .student-activity-card {
+      margin-bottom: 24px;
+    }
+    .vertical-form-group .ant-select {
+      width: 100%;
+    }
+    .activities-notes-panel-container {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid #293a68;
+      padding: 10px;
+      margin-bottom: 32px;
+    }
+    .activities-google-doc-btn {
+      align-self: center;
+      padding: 12px 32px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #293a68;
+      margin-top: 32px;
+      margin-bottom: 8px;
+      border: none;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-in-out all;
+      &:hover {
+        cursor: pointer;
+        background-color: #04acec;
+      }
+    }
+    .counselor-activities-notes {
+      .header {
+        color: #1c1e21;
+        font-size: 18px;
+        text-transform: none;
+      }
+      .sub-header {
+        color: #1c1e21;
+        font-size: 16px;
+        text-decoration: underline;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

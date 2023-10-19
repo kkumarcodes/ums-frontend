@@ -1,0 +1,198 @@
+.taskList {
+  padding: 10px 0;
+
+  :global {
+    .toggle-all {
+      text-align: center;
+      padding: 12px 0px;
+      margin-top: 24px;
+      width: 100%;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-size: 16px;
+
+      &:hover {
+        font-weight: bold;
+      }
+
+      &:focus {
+        font-weight: bold; //a11y consideration
+        outline: none;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 14px;
+      }
+    }
+
+    .empty-state {
+      text-align: center;
+      font-style: italic;
+      font-size: 16px;
+      margin: 12px 0px;
+      padding: 12px;
+    }
+
+    .task-session-list-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0px;
+      border-bottom: 1px solid lighten(#04acec, 40%);
+
+      &:last-child {
+        border-bottom: none !important;
+      }
+
+      .noDue {
+        color: #ccc;
+        margin: 0;
+      }
+
+      .item-date {
+        font-size: 16px;
+        flex: 0 0 25%;
+        max-width: 200px;
+        .item-date-inner {
+          height: 100%;
+          font-weight: 600;
+          background: #fff1c9;
+          text-align: center;
+          // text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .date-time {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .second-time {
+            display: table;
+          }
+          &.completed {
+            background: #ffe2d1;
+          }
+        }
+        /* Controls calendar-icon switch on mobile-and-down */
+        @media (max-width: 576px) {
+          flex: 0 0 15%;
+          .item-date-inner {
+            display: none;
+          }
+        }
+        @media (min-width: 576px + 1) {
+          .calendar-icon-wrapper {
+            display: none;
+          }
+        }
+      }
+      .item-tag {
+        margin: 0px 6px;
+        margin-top: 6px;
+        height: 22px;
+      }
+      .item-title {
+        flex-grow: 1;
+        padding: 0 4%;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+
+        .item-title-text {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+
+          @media (max-width: 576px) {
+            font-size: 14px;
+          }
+        }
+
+        .item-title-bottom {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow: hidden;
+          a,
+          .ant-btn {
+            margin-right: 20px;
+          }
+          .ant-btn {
+            margin-top: 6px;
+          }
+        }
+
+        .item-edit-notes {
+          width: auto;
+        }
+
+        @media (max-width: 768px) {
+          .ant-btn {
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+
+        @media (max-width: 375px) {
+          font-size: 12px;
+        }
+      }
+
+      .item-resources {
+        font-size: 14px;
+        white-space: nowrap;
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+
+        a:hover {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .item-actions {
+      display: flex;
+      align-items: center;
+
+      svg {
+        font-size: 32px;
+      }
+
+      .ant-btn:hover {
+        border-color: #04acec;
+      }
+
+      .indicatorSaving {
+        color: #04acec;
+      }
+    }
+  }
+}
+
+// TODO: figure out how to do this without accessing global css
+:global {
+  .task-list {
+    .task-session-list-item:last-of-type {
+      border-bottom: none !important;
+    }
+
+    .last-task-session-list-item {
+      border-bottom: none !important;
+    }
+
+    .task-session-list-item {
+      @media (min-width: 576px + 1px) {
+        border: none !important;
+      }
+    }
+  }
+}

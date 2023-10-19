@@ -1,0 +1,73 @@
+.containerTaskSession {
+}
+
+.filterTaskSession {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  :global {
+    .selectEventType {
+      width: 180px;
+    }
+
+    .addToGoogle {
+      margin-left: 48px;
+    }
+  }
+}
+
+.calendarTaskSession {
+  height: 800px;
+  padding-bottom: 40px;
+
+  :global {
+    .rbc-event {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.calendarLoader {
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+
+  .calendarSpinner {
+    font-size: 5rem;
+  }
+}
+
+:global {
+  .container-task-session-cal-modal {
+    .ant-modal-confirm-content {
+      margin-left: 8px !important;
+    }
+  }
+
+  .wrapper-task-session-calendar-event-detail {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      padding-top: 0.5em;
+    }
+
+    .event-detail-row {
+      display: flex;
+      padding: 0.2em 0;
+    }
+
+    .event-detail-label {
+      flex: 0 0 40%;
+      text-align: right;
+      font-weight: 600;
+    }
+
+    .event-detail-value {
+      flex: 1 1 60%;
+      padding-left: 1em;
+    }
+  }
+}

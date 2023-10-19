@@ -1,0 +1,46 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+
+  :global {
+    .buttonsContainer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-grow: 1;
+      margin-bottom: 20px;
+
+      .ant-btn {
+        margin-left: 24px;
+      }
+    }
+
+    .searchWrapper,
+    .filterWrapper {
+      margin-bottom: 16px;
+      margin-right: 24px;
+    }
+
+    .filterLabel {
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .filterWrapper {
+      display: flex;
+      flex-direction: column;
+      padding-top: 8px;
+    }
+
+    .wrapperResetButton {
+      display: flex;
+      align-items: center;
+    }
+
+    .resetFilterButton {
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.CounselorMeetingNoteModal {
+  :global {
+    .non-meeting-note-title-input {
+      font-size: 18px;
+      width: 70%;
+    }
+    .note-title-btn {
+      margin-left: 0px;
+    }
+    .note-title {
+      font-size: 24px;
+    }
+    .title-placeholder {
+      border-bottom: 1px dashed gray;
+      color: gray;
+    }
+    .meeting-note-modal-content {
+      .header {
+        text-align: center;
+        background-color: #293a68;
+        color: white;
+        margin-bottom: 16px;
+        padding: 4px 0;
+        font-weight: bold;
+      }
+      .new-note-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+        .new-note-btn {
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .modal-control {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+        .modal-control-btn {
+          margin-right: 16px;
+          &:last-of-type {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}

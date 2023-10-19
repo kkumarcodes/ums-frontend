@@ -1,0 +1,18 @@
+.cfuModal {
+  :global {
+    .ant-row.ant-form-item {
+      display: flex;
+      width: 100%;
+      .ant-form-item-label {
+        flex: 0 0 30%;
+      }
+    }
+    .ant-select,
+    .ant-input {
+      width: 250px !important;
+    }
+    .ant-upload-list-item {
+      max-width: 280px;
+    }
+  }
+}

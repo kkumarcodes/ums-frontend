@@ -1,0 +1,11 @@
+.counselorTimeCardTable {
+  :global {
+    .approve-container {
+      width: 225px;
+      .ant-tag {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

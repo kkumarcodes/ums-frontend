@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,4BAFwB,CAC1B,OAAO,CACL,uBAAuB,CAAC;EACtB,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "TutoringPackagePurchaseList.scss"
+    ],
+    "names": [],
+    "file": "TutoringPackagePurchaseList.css"
+}

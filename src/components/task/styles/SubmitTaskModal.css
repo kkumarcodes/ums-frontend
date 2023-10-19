@@ -1,0 +1,12 @@
+.submitTaskModal :global .ant-modal-header,
+.submitTaskModal :global .ant-modal-body {
+  text-align: center;
+}
+
+.submitTaskModal :global .input-container hr {
+  background: #ddd;
+  height: 3px;
+  border: none;
+  margin: 24px 0px;
+}
+/*# sourceMappingURL=SubmitTaskModal.css.map */

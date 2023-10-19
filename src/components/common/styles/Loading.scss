@@ -1,0 +1,27 @@
+.loading {
+  width: 200px;
+  display: inline-block;
+  :global {
+    img {
+      width: 100%;
+    }
+  }
+}
+.animate {
+  animation: animate 1.25s linear infinite;
+  position: relative;
+  @keyframes animate {
+    0% {
+      transform: scale(0.99);
+      bottom: 0px;
+    }
+    50% {
+      transform: scale(1.01);
+      bottom: 8px;
+    }
+    100% {
+      transform: scale(0.99);
+      bottom: 0px;
+    }
+  }
+}

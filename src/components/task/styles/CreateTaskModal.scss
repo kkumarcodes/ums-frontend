@@ -1,0 +1,11 @@
+.createTaskModal {
+  :global {
+    .error-container {
+      color: red;
+    }
+    .tab-container {
+      margin: 6px 0px !important;
+      padding: 6px 0px !important;
+    }
+  }
+}

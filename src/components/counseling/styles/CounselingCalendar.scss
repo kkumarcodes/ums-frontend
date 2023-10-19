@@ -1,0 +1,55 @@
+.CounselingCalendar {
+  :global {
+    .heading {
+      position: relative;
+      .loading {
+        position: absolute;
+        left: 120px;
+      }
+    }
+    .rbc-toolbar-label {
+      font-weight: bold;
+    }
+    .calendar-wrapper {
+      height: 800px;
+    }
+    .toolbar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
+      .radio-group-label {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 16px;
+      }
+      .radio-group-wrapper {
+        margin-right: 32px;
+        &:last-of-type {
+          margin-right: 0px;
+        }
+      }
+    }
+    .rbc-event-task-past {
+      background-color: #808080;
+    }
+
+    .rbc-event-meeting-past {
+      background-color: #808080;
+    }
+  }
+}
+
+:global {
+  .counseling-calendar-event-modal {
+    .modal-control {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .modal-btn {
+      margin-right: 10px;
+      &:last-of-type {
+        margin-right: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.courseSelector {
+  :global {
+    .select-container {
+      text-align: center;
+      margin-bottom: 12px;
+      label {
+        margin-right: 10px;
+      }
+      .ant-select {
+        width: 380px;
+      }
+    }
+    .course {
+      border: solid 1px #293a68;
+      width: 100%;
+      padding: 12px;
+      margin: 24px auto;
+      .description-container {
+        p {
+          margin: 4px 0px;
+        }
+        .title {
+          font-weight: bold;
+        }
+        .description {
+          font-size: 0.9em;
+          color: #777;
+        }
+      }
+      .enroll-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 12px;
+        .action-button {
+          padding: 14px;
+        }
+      }
+    }
+  }
+}

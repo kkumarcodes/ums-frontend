@@ -1,0 +1,162 @@
+.CounselorMeetingForm {
+  :global {
+    .student-title-row {
+      flex-wrap: nowrap;
+    }
+    .location-select {
+      width: 100%;
+    }
+
+    .student-field {
+      margin-right: 4%;
+    }
+    .student-title {
+      flex: 1 1 48%;
+    }
+    .date-time {
+      flex: 1 1 32%;
+    }
+  }
+}
+
+.CounselorMeetingTable {
+  font-size: 16px;
+
+  :global {
+    .meeting-display {
+      p {
+        margin: 4px 0px;
+      }
+      .name {
+        font-weight: bold;
+      }
+      .date {
+        color: #888;
+      }
+    }
+    .zoom-tag {
+      .ant-tag {
+        cursor: pointer;
+      }
+    }
+    .ant-badge {
+      margin-left: 20px;
+      position: relative;
+      top: -1px;
+      .ant-badge-count {
+        background-color: #bbb;
+        color: #293a68;
+        box-shadow: '0 0 0 1px #d9d9d9 inset';
+      }
+    }
+    .ant-btn-link {
+      padding-left: 0;
+    }
+
+    .meeting-toolbar {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 20px;
+      justify-content: space-between;
+    }
+    .add-meeting-btn {
+      margin-left: 32px;
+    }
+    .resource-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .ant-table-thead .ant-table-cell {
+      font-weight: bold;
+      border-top: solid #ddd 3px;
+    }
+    .ant-table-column-sorter-up.active,
+    .ant-table-column-sorter-down.active {
+      color: white !important;
+    }
+    .resource-tag {
+      margin-bottom: 4px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .action-row {
+      flex-wrap: nowrap;
+    }
+    .edit-btn {
+      margin-right: 5px;
+    }
+  }
+}
+
+// Counselor/Student Instructions Modal
+:global {
+  .instructions-modal {
+    max-width: 50% !important;
+    width: max-content !important;
+    font-size: 16px !important;
+  }
+}
+
+.CounselorMeetingTaskModal {
+  :global {
+    .btn-date,
+    .div-date {
+      display: inline-block;
+      width: 55px;
+      border: none;
+      background: none;
+      margin-right: 16px;
+      text-align: center;
+      padding: 0;
+    }
+    .btn-date {
+      border-bottom: 2px solid transparent;
+      transition: 0.4s ease-in-out all;
+      outline: none;
+      &:hover {
+        cursor: pointer;
+        border-bottom: 2px solid #293a68;
+      }
+    }
+    .btn-title-wrapper {
+      flex: 1;
+    }
+    .btn-title {
+      border: none;
+      background: none;
+      display: inline-block;
+      text-align: left;
+      margin-right: 16px;
+      border-bottom: 2px solid transparent;
+      transition: 0.4s ease-in-out all;
+      outline: none;
+      &:hover {
+        cursor: pointer;
+        border-bottom: 2px solid #293a68;
+      }
+    }
+    .month-task-list-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 48px;
+      .urgent {
+        background-color: #8b0000;
+      }
+    }
+    .month-task-item-header-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 12px;
+      background-color: #293a68;
+      color: white;
+      line-height: 1.5em;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 38px;
+    }
+  }
+}

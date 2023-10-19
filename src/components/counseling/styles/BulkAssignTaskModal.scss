@@ -1,0 +1,47 @@
+.bulkAssignTaskModal {
+  :global {
+    .steps-action {
+      padding: 20px 0;
+    }
+    .next-btn {
+      margin-left: 20px;
+    }
+  }
+}
+
+.filterStudentStep {
+  padding: 3 * 20px 0 2 * 20px;
+  :global {
+    .label-select {
+      padding: 0 0 20px;
+      display: inline-block;
+    }
+    .two-col-select {
+      width: 45%;
+    }
+  }
+}
+
+.selectStudentStep {
+  padding: 2 * 20px 0;
+  :global {
+    .header {
+      padding: 20px 0 3 * 20px;
+    }
+    .ant-checkbox-group {
+      width: 95%;
+    }
+    .ant-checkbox-group-item {
+      display: block !important;
+    }
+    .label-select {
+      display: block;
+    }
+    .steps-action {
+      padding: 20px 0;
+    }
+    .select-none-btn {
+      margin-left: 20px;
+    }
+  }
+}

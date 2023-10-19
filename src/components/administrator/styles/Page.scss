@@ -1,0 +1,14 @@
+.userPage,
+.locationPage {}
+
+.addButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+
+  :global {
+    .ant-btn {
+      margin-left: 24px;
+    }
+  }
+}

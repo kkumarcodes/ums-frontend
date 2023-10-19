@@ -1,0 +1,32 @@
+.counselorStudentList {
+  :global {
+    .ant-table-filter-trigger.active {
+      color: #04acec !important;
+    }
+    .ant-table-thead .ant-table-cell {
+      background: #293a68;
+      color: white;
+      &:hover {
+        background-color: #04acec;
+      }
+      &.right {
+        text-align: right !important;
+      }
+      &.center {
+        text-align: center !important;
+      }
+    }
+    .ant-table-cell .ant-tag {
+      cursor: pointer;
+    }
+    .next-meeting {
+      p {
+        margin: 0;
+      }
+    }
+    .high-school {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+}

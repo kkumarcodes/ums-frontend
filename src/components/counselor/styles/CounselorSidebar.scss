@@ -1,0 +1,98 @@
+.counselorSidebar {
+  :global {
+    .show-expanded {
+      display: block;
+      width: 300px;
+    }
+    .hide {
+      display: none;
+    }
+    .show-collapse {
+      display: block;
+      width: 60px;
+    }
+    .hide {
+      display: none;
+    }
+    .counselor-sidebar-expanded {
+      background: #293a68;
+      color: white;
+      position: relative;
+      left: -25px;
+      padding: 10px;
+      padding-left: 12px;
+      border: solid 1px #04acec;
+      box-shadow: 2px 0px 8px rgba(0, 0, 9, 0.35);
+      // 108px = 60px (header-nav) + 24px * 2 (app-content-outer padding)
+      height: calc(100vh - 108px);
+      .sidebar-nav-link.active {
+        color: #04acec;
+      }
+      a,
+      h4 {
+        color: white;
+      }
+      a:hover {
+        color: #04acec;
+      }
+      .inner-content {
+        z-index: 10;
+        position: absolute;
+        width: 92%;
+      }
+    }
+    .close-button {
+      position: absolute;
+      right: -5px;
+      top: -5px;
+      color: white;
+    }
+    .sidebar-nav-link {
+      font-size: 26px;
+      font-family: 'Rokkitt', serif;
+      line-height: 28px;
+    }
+    .switch-active-student {
+      z-index: 2;
+      width: 100%;
+      padding: 5px 10px;
+      margin-bottom: 12px;
+      .ant-select {
+        width: 100%;
+      }
+    }
+    .active-student,
+    .recent-students {
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+      text-align: right;
+      padding-right: 10px;
+      h3,
+      h4 {
+        border-bottom: solid 2px #04acec;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        color: white;
+      }
+      h3 {
+        font-size: 28px;
+      }
+      h4 {
+        font-size: 22px;
+      }
+    }
+    .recent-students {
+      margin-top: 40px;
+    }
+
+    .counselor-sidebar-collapsed {
+      position: relative;
+      left: -80px;
+      top: 60px;
+      .students-tab {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

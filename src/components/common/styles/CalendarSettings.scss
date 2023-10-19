@@ -1,0 +1,33 @@
+.calendarSettings {
+  :global {
+    .outlook-integration {
+      .ant-btn {
+        margin-bottom: 8px;
+      }
+
+      .save-button {
+        margin-top: 40%;
+      }
+    }
+    .timezone-container {
+      max-width: 400px;
+      margin-top: 3 * 20px;
+    }
+    .buffer-settings {
+      .help {
+        padding-right: 20px * 2;
+      }
+      .ant-col-8 {
+        margin-bottom: 20px * 2;
+        border-bottom: solid 2px #ddd;
+      }
+      .save-button {
+        flex: 0 0 100%;
+      }
+      .ant-form-item-label,
+      .ant-form-item {
+        margin-bottom: 20px / 2;
+      }
+    }
+  }
+}

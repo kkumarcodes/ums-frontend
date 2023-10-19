@@ -1,0 +1,17 @@
+.diagnosticResultModal :global .selectStudentDiagnostic .selectContainer {
+  margin: 4px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.diagnosticResultModal :global .selectStudentDiagnostic .selectContainer label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
+}
+
+.diagnosticResultModal :global .selectStudentDiagnostic .selectContainer .ant-select {
+  width: 100%;
+}
+/*# sourceMappingURL=DiagnosticResultModal.css.map */

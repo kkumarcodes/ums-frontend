@@ -1,0 +1,79 @@
+.CounselorStudentSubNav {
+  :global {
+    .hide {
+      display: none;
+    }
+    .subnav-header {
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        margin: 0;
+      }
+    }
+    .subnav-heading {
+      margin-bottom: none;
+    }
+    .subheader {
+      margin-bottom: 16px;
+      span {
+        margin-right: 10px;
+      }
+      .parent, .year {
+        margin-left: 30px;
+        display: inline-block;
+      }
+    }
+    .subnav-list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      border-bottom: solid 5px #ddd;
+      border-top: solid 5px #ddd;
+      padding-bottom: 4px;
+      height: 55px;
+      padding-top: 7px;
+      font-size: 25px;
+    }
+    .subnav-item-link {
+      list-style: none;
+      padding: 0px 24px;
+      margin: 0px 24px;
+      text-align: center;
+      transition: 0.3s ease-in-out all;
+      border-bottom: 2px solid transparent;
+      outline: none;
+      position: relative;
+      .anticon {
+        z-index: 3;
+        position: absolute;
+        top: 2px;
+        left: 28%;
+      }
+      .activities-icon svg {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: -4px;
+      }
+      &:hover {
+        cursor: pointer;
+        color: #04acec;
+      }
+    }
+    .subnav-item-link.active {
+      color: #293a68;
+      z-index: 2;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        transform: rotate(-3.5deg);
+        width: 100%;
+        border-bottom: solid 10px #04acec;
+        z-index: 0;
+        box-shadow: 1px 1px 4px #888;
+      }
+    }
+  }
+}

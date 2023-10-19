@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAEI,gBAFY,CACd,OAAO,CACL,iBAAiB;AAFrB,gBAAgB,CACd,OAAO,CAEL,eAAe,CAAC;EACd,UAAU,EAAE,MAAM;CACnB;;AALL,AAOM,gBAPU,CACd,OAAO,CAKL,gBAAgB,CACd,EAAE,CAAC;EACD,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,QAAQ;CACjB",
+    "sources": [
+        "SubmitTaskModal.scss",
+        "../../../style/common/_variables.scss"
+    ],
+    "names": [],
+    "file": "SubmitTaskModal.css"
+}

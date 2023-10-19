@@ -1,0 +1,50 @@
+// TODO: Make header/footer bg color dynamic
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  width: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fafafa;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, .1);
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  text-transform: normal;
+  letter-spacing: unset;
+  @media (min-width: 576px + 1px) {
+    display: none;
+  }
+}
+
+.header, .footer {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 1px 0;
+  text-transform: uppercase;
+}
+
+.middle {
+ display: flex;
+ flex-direction: column;
+ position: relative;
+  .title {
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    top: 2px;
+    text-transform: capitalize;
+    // border: 1px solid green;
+  }
+
+  .value {
+    display: flex;
+    position: relative;
+    align-items:  center;
+    justify-content: center;
+    font-size: 24px;
+    text-transform: none;
+    top: -1px;
+  }
+}

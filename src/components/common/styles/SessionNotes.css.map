@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,CAAC;EACR,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,aAAa,CAAC;EACZ,aAAa,EAAE,IAAI;CACpB;;AAED,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,QAAQ;CACjB",
+    "sources": [
+        "SessionNotes.scss"
+    ],
+    "names": [],
+    "file": "SessionNotes.css"
+}

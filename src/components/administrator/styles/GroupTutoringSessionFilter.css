@@ -1,0 +1,65 @@
+.groupTutoringSessionsFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.groupTutoringSessionsFilter :global .search-range-picker-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.groupTutoringSessionsFilter :global .search-wrapper {
+  width: 350px;
+}
+
+.groupTutoringSessionsFilter :global .range-picker {
+  margin-left: 32px;
+  margin-bottom: 2px;
+}
+
+.groupTutoringSessionsFilter :global .range-picker .ant-picker-input > input {
+  text-align: center;
+}
+
+.groupTutoringSessionsFilter :global .session-type-dropdown {
+  margin-left: auto;
+}
+
+.groupTutoringSessionsFilter :global .session-status-dropdown {
+  margin-left: 10px;
+}
+
+.groupTutoringSessionsFilter :global .note-status-dropdown {
+  margin-left: 10px;
+}
+
+.groupTutoringSessionsFilter :global .menu-checkbox-span {
+  margin-left: 8px;
+}
+
+.groupTutoringSessionsFilter :global .buttonCSV {
+  position: relative;
+  bottom: 2px;
+  margin-left: 30px;
+}
+
+:global .ant-dropdown-menu-item-selected {
+  background-color: transparent !important;
+}
+
+:global .ant-dropdown-menu-item-active {
+  background-color: #e6f7ff !important;
+}
+/*# sourceMappingURL=GroupTutoringSessionFilter.css.map */

@@ -1,0 +1,50 @@
+$timeline-line-color: #c4c4c4;
+$timeline-line-thickness: 8px;
+$timeline-head-size: 22px;
+$timeline-head-horizontal-offset: -3px;
+$timeline-head-vertical-offset: 2px;
+$timeline-tail-vertical-offset: -6px;
+$timeline-past-meeting-opacity: 0.45;
+$timeline-item-width: 600px;
+$timeline-last-tail-height-offset: 20px;
+$timeline-card-min-height: 100px;
+
+.verticalRoadmap {
+  :global {
+    .ant-timeline-item {
+      width: $timeline-item-width;
+    }
+    .past {
+      opacity: $timeline-past-meeting-opacity;
+    }
+    .ant-timeline-item-head {
+      z-index: 1;
+      width: $timeline-head-size;
+      height: $timeline-head-size;
+      left: $timeline-head-horizontal-offset;
+      top: $timeline-head-vertical-offset;
+      background-color: #293a68;
+    }
+    .ant-timeline-item-tail {
+      top: $timeline-tail-vertical-offset;
+      border-left: $timeline-line-thickness solid $timeline-line-color;
+      height: 100%;
+    }
+    .ant-timeline-item-last > .ant-timeline-item-tail {
+      display: unset;
+      height: calc(100% - $timeline-last-tail-height-offset);
+    }
+    .ant-card {
+      min-height: $timeline-card-min-height;
+      background-color: #f9f9f9;
+      margin-left: 20px * 1.5;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .ant-card-body {
+      padding: 20px;
+      .ant-btn.ant-btn-link {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+$margin: 10px;
+.CounselorMeetingNoteForm {
+  margin-bottom: $margin;
+  :global {
+    .top-panel {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: $margin;
+      .counselor-note-category {
+        font-weight: bold;
+        color: #293a68;
+      }
+      .category-wrapper {
+        margin: $margin 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .category-label {
+        color: #293a68;
+
+        font-weight: 600;
+        margin-right: 32px;
+      }
+      .category-select {
+        width: 200px;
+      }
+      .delete-btn {
+        color: #04acec;
+        padding: 0;
+        transition: 0.3s ease-in-out all;
+        &:hover {
+          color: #293a68;
+        }
+      }
+    }
+    .bottom-panel {
+      .note-read-only {
+        border-bottom: 1px dashed rgba(56, 69, 109, 0.4);
+        margin-bottom: 2 * $margin;
+        padding-bottom: $margin;
+        white-space: pre-wrap;
+      }
+    }
+  }
+}

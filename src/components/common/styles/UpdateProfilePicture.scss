@@ -1,0 +1,15 @@
+.updateProfilePicture {
+  :global {
+    .settings-section {
+      max-width: 400px;
+    }
+    .profile-picture-preview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .ant-btn {
+        margin-top: 20px;
+      }
+    }
+  }
+}

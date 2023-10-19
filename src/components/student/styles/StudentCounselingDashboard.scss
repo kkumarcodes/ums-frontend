@@ -1,0 +1,13 @@
+.studentCounselingDashboard {
+  :global {
+    .left-container {
+      flex: 60% 0 0;
+    }
+    .right-container {
+      flex: 35% 0 0;
+    }
+    .wisernet-section {
+      margin-bottom: 20px * 6;
+    }
+  }
+}

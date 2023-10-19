@@ -1,0 +1,155 @@
+.CounselorStudentProfile {
+  :global {
+    .wisernet-section {
+      margin-bottom: 7 * 20px;
+    }
+    .toolbar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 24px 0px;
+      .login-as-student {
+        font-weight: bold;
+        font-size: 14px;
+        padding: 0;
+        &:hover {
+          color: #04acec;
+        }
+      }
+    }
+    .add-button {
+      position: relative;
+      top: -6px;
+    }
+    .profile-container-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .profile-container-top-left {
+        flex-shrink: 1;
+        width: 65%;
+        margin-right: 16px;
+        min-width: 600px;
+      }
+      .profile-container-top-right {
+        flex: 0 0 32%;
+        display: flex;
+        flex-direction: column;
+        .sud-view-btn.active {
+          color: #04acec;
+          border-color: #04acec;
+        }
+        .sud-view-btn:first-of-type {
+          margin-right: 8px;
+        }
+      }
+      .profile-container-top-left {
+        flex: 0 0 64%;
+      }
+    }
+    .profile-container-bottom {
+      .activity-log-tabpane {
+        max-height: 520px;
+      }
+    }
+
+    .meetings-container,
+    .tasks-container {
+      font-size: 16px;
+    }
+    .meetings-container {
+      .meeting-item-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .meeting-item-header {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .task-header-item {
+        width: 30%;
+        margin-left: auto;
+        text-decoration: underline;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+      }
+      .meeting-item-content {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        border: none;
+        width: 100%;
+        padding-bottom: 16px;
+        &:hover {
+          cursor: pointer;
+        }
+        .left-content {
+          display: flex;
+          align-items: center;
+          width: 70%;
+          font-size: 16px;
+          .toggle-icon {
+            font-size: 18px;
+            color: #293a68;
+            padding-right: 8px;
+          }
+          .expand-icon {
+            transition: 0.3s all ease-in-out;
+          }
+          .expand-icon.rotate {
+            transform: rotate(-180deg);
+          }
+          .meeting-date {
+            padding-right: 24px;
+          }
+        }
+        .right-content {
+          display: flex;
+          width: 30%;
+          flex-shrink: 0;
+          .task-count {
+            width: 50px;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-right: 150px;
+          }
+        }
+      }
+      .tab-title {
+        font-size: 16px;
+      }
+      .tab-row {
+        padding: 32px;
+        padding-top: 0px;
+      }
+      .tab-row.show {
+        display: block;
+      }
+      .tab-row.hide {
+        display: none;
+      }
+      .task-container {
+        font-size: 16px;
+      }
+      .instructions {
+        font-size: 16px;
+      }
+      .new-note-container {
+        display: flex;
+        justify-content: center;
+        padding: 16px 0;
+        .new-note-btn {
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    }
+    .messaging-container {
+      height: 380px;
+      font-size: 16px;
+    }
+    .quill {
+      height: 100%;
+      margin-bottom: 24px;
+    }
+  }
+}

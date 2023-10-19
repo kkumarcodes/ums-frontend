@@ -1,0 +1,235 @@
+// # TimeCard Page
+.containerPage {
+  display: flex;
+  flex-flow: column;
+}
+
+// # Refresh button
+.refresh {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+// # TimeCard Filters
+.containerFilters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  :global {
+    .search {
+      flex: 0 1 300px;
+      margin: 0 100px 0 0;
+    }
+
+    .wrapperRangePicker {
+      display: flex;
+
+      .labelRangePicker {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 20px;
+      }
+    }
+
+    .rangePicker {
+      flex: 0 1 auto;
+      margin: 0 50px 0 0;
+
+      .ant-picker-input input {
+        text-align: center;
+      }
+    }
+
+    .containerButtonCreate {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 1 1 auto;
+
+      .ant-btn {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+// # TimeCard Table
+.containerTable {
+  :global {
+    .wrapperTutorNote {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spanHours {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .spanHours {
+      justify-content: center;
+    }
+
+    .columnActions {
+      text-align: center;
+      padding: 4px 6px !important;
+    }
+
+    .ant-table-cell {
+      padding: 4px 6px;
+    }
+
+    .ant-table thead > tr > th {
+      padding: 4px 6px;
+    }
+
+    .buttonEdit,
+    .buttonDelete {
+      margin: 0 5px 0 0;
+    }
+
+    .buttonApproved {
+      cursor: default;
+    }
+  }
+}
+
+// # TimeCard Modal (global because I couldn't get css modules generated className to work with antd modal)
+:global {
+  .containerModal {
+    .headerModal {
+      font-size: 0.9rem;
+      margin: 0 0;
+    }
+  }
+
+  .containerLineItemCreateForm {
+    border-bottom: 1px solid #04acec;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    .headerCreateLineItem {
+      padding: 0px 0 20px;
+    }
+
+    .formCreateLineItem {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapperDateStart,
+    .wrapperTitleHours {
+      display: flex;
+      padding: 20px 5px;
+      justify-content: space-between;
+      .ant-form-item {
+        flex: 1 1 30%;
+        .ant-select {
+          width: 250px;
+        }
+        .ant-input,
+        .ant-picker,
+        .ant-input-number {
+          width: 200px;
+        }
+      }
+    }
+
+    .wrapperButton {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 25px;
+    }
+
+    .ant-form-item {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+// # TimeCard Form
+.containerForm {
+  :global {
+    .errorMessage {
+      color: red;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+// # LineItem List
+.containerList {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+
+  :global {
+    .formWrapper {
+      margin: 0;
+      padding: 0;
+    }
+
+    .ant-form-item {
+      margin-bottom: 0px;
+    }
+
+    .headerTitle {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .lineItemDetailsList,
+    .headerList,
+    .containerLineItemCreateForm {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 5px 0px;
+      .wrapperDateStart {
+        justify-content: space-between;
+      }
+      .lineItemSelect .ant-select {
+        width: 160px;
+      }
+
+      .itemTitle {
+        flex: 1 0 0;
+        overflow: hidden;
+        margin-right: 20px;
+      }
+      .itemDate {
+        width: 120px;
+      }
+      .itemHours {
+        width: 80px;
+        display: flex;
+      }
+
+      .itemActions {
+        text-align: center;
+        min-width: 102px;
+
+        .editButton {
+          margin-right: 10px;
+        }
+      }
+
+      .buttonWrapperActions {
+        min-width: 102px;
+      }
+    }
+
+    .headerList .item {
+      font-weight: bold;
+      border-bottom: none;
+      margin-bottom: 10px;
+    }
+  }
+}

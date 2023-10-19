@@ -1,0 +1,29 @@
+.counselorMeetingNoteMessageModal {
+  :global {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+    }
+    .multi-file-upload {
+      margin: 20px 0px;
+    }
+    .modal-instructions {
+      border-left: solid 4px #293a68;
+      padding-left: 8px;
+    }
+    .subject-container,
+    .rich-text-container {
+      margin-bottom: 2 * 20px;
+    }
+    .ant-switch {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    .tasks-container {
+      .ant-checkbox-wrapper {
+        display: block;
+        margin: 4px 0px;
+      }
+    }
+  }
+}

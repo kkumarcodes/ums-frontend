@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,8BAA8B,CAAC;EAC7B,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,aAAa,EAAE,IAAI;CAUpB;;AAbD,AAKI,8BAL0B,CAI5B,OAAO,CACL,UAAU,CAAC;EACT,KAAK,EAAE,KAAK;CACb;;AAPL,AAQI,8BAR0B,CAI5B,OAAO,CAIL,KAAK,CAAC;EACJ,YAAY,EAAE,GAAG;EACjB,SAAS,EAAE,MAAM;CAClB;;AAGL,AAEI,4BAFwB,CAC1B,OAAO,CACL,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;CAC/B",
+    "sources": [
+        "DiagnosticRegistrations.scss"
+    ],
+    "names": [],
+    "file": "DiagnosticRegistrations.css"
+}

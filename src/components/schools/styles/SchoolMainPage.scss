@@ -1,0 +1,10 @@
+.mainSchoolPage {
+  :global {
+    .school-name-and-button {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.ActivityLogList {
+  :global {
+    .user-log-list {
+      max-height: 500px;
+      overflow-y: auto;
+      flex-grow: 1;
+      :global {
+        .loading-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .system-log-list {
+      max-height: 900px;
+      overflow-y: auto;
+      flex-grow: 1;
+      font-size: 18px;
+      :global {
+        .loading-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.ActivityLogListByDate {
+  margin-bottom: 20px;
+  :global {
+    .list-header {
+      display: inline-block;
+      padding: 0 4px 4px;
+    }
+  }
+}
+
+.UserLogItem,
+.SystemLogItem {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  border-bottom: solid 1px #808080;
+  &:last-of-type {
+    border-bottom: none;
+  }
+  :global {
+    .activity-item-top-panel {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+      .created-container,
+      .notification-container {
+        flex-grow: 1;
+      }
+      .created-by-header,
+      .notification-type-header {
+        color: #293a68;
+        font-weight: 600;
+        padding-right: 20px;
+      }
+      .created-by-name,
+      .notification-type-value {
+        color: rgba(0, 0, 0, 0.85);
+      }
+    }
+    .sent-details {
+      padding-top: 20px;
+      padding-left: 148px;
+      justify-content: flex-start;
+      & > div {
+        margin-right: 20px * 4;
+      }
+    }
+    .activity-item-bottom-panel {
+      display: flex;
+      .time {
+        margin: 0px 2 * 20px;
+        padding-right: 16px;
+        width: 100px;
+      }
+      .icon-wrapper {
+        position: relative;
+        top: 1px;
+      }
+      .activity-details {
+        padding-right: 80px;
+      }
+      .title {
+        color: #293a68;
+        font-weight: bold;
+      }
+      .description {
+        margin-top: 6px;
+        color: rgba(0, 0, 0, 0.65);
+      }
+    }
+  }
+}
+
+// Overwrites shared styles
+.SystemLogItem {
+  font-size: 17px;
+  margin: 24px 32px;
+  :global {
+    .activity-item-top-panel {
+      .notification-type-header {
+        padding-right: 16px;
+      }
+      .notification-type-value {
+      }
+      .time {
+        width: 100px;
+        font-size: 16px;
+        padding-right: 24px;
+      }
+    }
+    .activity-item-bottom-panel {
+      display: flex;
+      font-size: 16px;
+      .icon-wrapper {
+        position: relative;
+        top: 1px;
+      }
+      .activity-details {
+        padding: 0 120px 0 12px;
+      }
+    }
+  }
+}

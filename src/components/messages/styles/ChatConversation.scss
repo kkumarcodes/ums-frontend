@@ -1,0 +1,112 @@
+.chatConversation {
+  height: 100%;
+  padding: 12px;
+  width: 100%;
+  position: relative;
+  font-size: 0.9em;
+
+  :global {
+    .chat-bubbles-container {
+      width: 100%;
+      height: calc(100% - 100px);
+      overflow-y: scroll;
+    }
+
+    .input-form-container {
+      height: 100px;
+      border-top: solid 1px #293a68;
+      padding-top: 12px;
+    }
+
+    .status-container,
+    .student-sms-container {
+      position: absolute;
+      color: white;
+      background: #293a68;
+      padding: 3px 5px;
+    }
+    .status-container {
+      border-top-left-radius: 8px;
+      bottom: 0px;
+      right: 0px;
+    }
+
+    .student-sms-container {
+      bottom: 0px;
+      left: 0px;
+      border-top-right-radius: 8px;
+    }
+
+    .start-conversation-container {
+      width: 300px;
+      margin: 48px auto;
+
+      button {
+        height: 70px;
+        border-radius: 0px;
+      }
+    }
+
+    .svgNotFound {
+      color: #04acec;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.pageChatConversationAdmin {
+  max-width: 800px;
+
+  :global {
+    .svgWaiting {
+      color: #04acec;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// Admin app
+.chatConversationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  :global {
+    .chat-bubbles-container {
+      overflow-y: unset; // removes scrollbar on Admin app
+    }
+
+    .chat-conversation-waiting-png {
+      width: 540px;
+      height: 390px;
+    }
+
+    .not-found-png {
+      width: 560px;
+      height: 390px;
+    }
+  }
+}
+
+.selectChatConversation {
+  margin-bottom: 50px;
+
+  .selectStudent {
+    min-width: 250px;
+    margin: 0 20px 0 10px;
+  }
+
+  .selectConversationType {
+    width: 250px;
+    margin: 0 10px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+}

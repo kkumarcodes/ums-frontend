@@ -1,0 +1,45 @@
+.fullContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  :global {
+    .split-view {
+      display: flex;
+      flex-direction: row;
+      align-items: space-between;
+    }
+
+    .applying-student-card {
+      width: 30%;
+      margin-right: 5 * 20px;
+      min-width: 330px;
+
+      .student-list {
+        padding-top: 20px * 3;
+      }
+      .toolbar {
+        margin: 20px 0px;
+        padding: 20px 0px;
+        border-top: solid 2px #ddd;
+        border-bottom: solid 2px #ddd;
+        display: flex;
+        justify-content: space-between;
+        & > div {
+          flex: 0 0 46%;
+        }
+        .ant-select {
+          width: 100%;
+        }
+        label {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-evenly;
+}

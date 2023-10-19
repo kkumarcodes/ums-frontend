@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,SAAS,EAAE,KAAK;CACjB",
+    "sources": [
+        "TutorViewStudentResources.scss"
+    ],
+    "names": [],
+    "file": "TutorViewStudentResources.css"
+}

@@ -1,0 +1,61 @@
+.sessionSelector {
+  margin-top: 24px;
+
+  :global {
+    .toggle-buttons-container {
+      button {
+        width: 75px;
+        text-align: center;
+        border: solid 1px #293a68;
+        margin-left: 20px;
+        transition: transform 0.1s linear;
+
+        &:hover {
+          background: #293a68;
+          color: white;
+          transform: scale(1.12);
+        }
+      }
+    }
+
+    .remote-label {
+      font-size: 0.75em;
+    }
+  }
+}
+
+.sessionContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+
+  :global {
+    p {
+      margin: 5px 0px;
+    }
+  }
+}
+
+.timeSelectedContainer {
+  border-left: solid 5px #293a68;
+  padding-left: 6px;
+  margin-top: 10px;
+  font-size: 1.25em;
+
+  label {
+    margin: 0px 6px;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.emptyContent {
+  text-align: center;
+  margin-top: 25px;
+}

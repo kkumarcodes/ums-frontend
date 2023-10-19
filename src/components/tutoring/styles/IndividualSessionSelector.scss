@@ -1,0 +1,74 @@
+.sessionSelector {
+  :global {
+    .day-header {
+      border-bottom: solid 2px #ddd;
+      margin-bottom: 6px;
+
+      @media (max-width: 576px) {
+        font-weight: 600;
+      }
+    }
+    .individual-session-times-confirmation {
+      padding: 8px 20px;
+      border-left: solid 4px #293a68;
+      ul {
+        padding-left: 0;
+        margin-left: 18px;
+      }
+      p {
+        margin-bottom: 4px;
+      }
+    }
+    .range-container {
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    .confirmation-container {
+      text-align: right;
+      padding-top: 4px;
+    }
+
+    .toggle-buttons-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px;
+
+      button {
+        text-align: center;
+        border: solid 1px #293a68;
+        margin: 0 10px 10px 0;
+        font-weight: 600;
+        transition: transform 0.1s linear;
+
+        @media (max-width: 375px) {
+          padding: 4px 10px;
+          font-size: 12px;
+        }
+
+        &:hover {
+          background: #293a68;
+          color: white;
+          transform: scale(1.12);
+        }
+      }
+    }
+  }
+}
+
+.timeSelectedContainer {
+  border-left: solid 5px #293a68;
+  padding-left: 6px;
+  font-size: 1.25em;
+
+  label {
+    margin: 0px 6px;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

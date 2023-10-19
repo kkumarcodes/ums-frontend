@@ -1,0 +1,49 @@
+.deadlineSelector {
+  width: 100%;
+  text-align: center;
+  :global {
+    .deadline-display {
+      cursor: pointer;
+      .anticon {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.popoverContent {
+  width: 300px;
+  padding: 24px;
+  :global {
+    h4 {
+      border-bottom: solid 2px #293a68;
+      margin-bottom: 6px;
+    }
+    .deadline {
+      display: flex;
+      justify-content: space-between;
+    }
+    .deadline,
+    .custom-deadline {
+      width: 100%;
+      padding: 6px 0px;
+      border-bottom: solid 1px #808080;
+    }
+    .deadline {
+      .deadline-type-of {
+        flex: 0 0 50%;
+      }
+      .deadline-date {
+        flex: 0 0 20%;
+      }
+    }
+    .custom-deadline {
+      margin-top: 32px;
+    }
+    .remove {
+      margin-top: 6px;
+      padding-top: 6px;
+      border-top: solid 2px #808080;
+    }
+  }
+}
